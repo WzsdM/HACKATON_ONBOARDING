@@ -251,10 +251,11 @@ nav a:hover {
     /*FIn estilos responsive de informacion*/
 
 /* Estilos responsive de los productos */
-@media (min-width: 768px) {
+@media (max-width: 360px) {
     .product {
-        flex-direction: row;
+        flex: 1 1 calc(50% - 10px); /* Dos productos por fila, con un gap más pequeño */
     }
+
 
     .product img {
         width: 40%;
@@ -266,9 +267,10 @@ nav a:hover {
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 360px) {
     .products-container {
         justify-content: flex-start; /* Alinea los productos a la izquierda en dispositivos pequeños */
+        align-items: center;
     }
     
     .product {
