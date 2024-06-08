@@ -39,6 +39,14 @@
             </div>
         </div>
     </div>
+
+    <!--INCIO DEL PHP DE LA API-->
+        <?php
+        $ch= curl_init();
+        $url="https://github.com/pyerinaRC28/apiHackaton";
+        curl_setopt($ch,CURLOPT_URL,$url);
+        ?>
+
     <!--Productos(AQUI SE APLICARA EL API EN PHP)-->
     <div class="products-container">
         <div class="product">
@@ -49,7 +57,7 @@
                     <p class="texto-btn">2000</p><img src="Imagenes/UTP-COIN 1.png" alt="UTP-COIN" class="btn-icon">
                 </button>
             </div>
-        </div>
+    </div>
         <div class="product">
             <img src="Imagenes/LibretaUTP.png" alt="Producto 1" class="img-producto">
             <div class="product-info">
