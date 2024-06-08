@@ -43,7 +43,7 @@
                 </div>
             </div>
             <div class="storeBtn rounded">
-                <div class="coinstext">
+                <div class="storetext">
                     Tienda
                 </div>
                 <div class="icon">
