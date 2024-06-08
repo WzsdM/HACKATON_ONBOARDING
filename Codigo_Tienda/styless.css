@@ -97,14 +97,14 @@ nav a:hover {
     font-size: 10px;
 }
 .right-info h2{
-    font-size: 10px;
+    font-size: 20px;
 }
 .right-info{
     display: flex;
 }
 
 .left-info {
-    margin-right: 0; /* Elimina el margen derecho en dispositivos pequeños */
+    margin-right: 400px; /* Elimina el margen derecho en dispositivos pequeños */
 }
 .right-info p {
     border-radius: 5px;
@@ -128,32 +128,41 @@ nav a:hover {
     flex-wrap: wrap;
     gap: 20px;
     justify-content: center; /* Centra los productos horizontalmente */
-  
+   
 }
 
 .product {
     background-color: #253038;
     padding: 10px;
-    flex: 1;
-    max-width: 300px;
+    width:150px;
     border-radius: 5px;
+}
+
+.product .img-producto {
+   width: 150px;
     
 }
 
-.product img {
-    width: 100%;
-    height: auto;
-    border-radius: 5px;
-}
-
 .product-info {
-    padding: 10px;
+    padding: 10px;   
 }
 
 .product-info h2 {
     margin-top: 0;
+    font-size: 15px;
+    color: white;
 }
-
+.product .price-agotado{
+    background-color: #1B2F3F;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: flex;
+    font-size: 16px;
+    border-radius: 5px;
+}
 .price-btn {
     background-color: #1B2F3F;
     border: none;
@@ -161,11 +170,16 @@ nav a:hover {
     padding: 10px 20px;
     text-align: center;
     text-decoration: none;
-    display: inline-block;
+    display: flex;
     font-size: 16px;
     border-radius: 5px;
     cursor: pointer;
     transition-duration: 0.4s;
+}
+.price-btn .btn-icon{
+    width: 15px;
+    height: 15px;
+    margin-left: 5px;
 }
 
 .price-btn:hover {
