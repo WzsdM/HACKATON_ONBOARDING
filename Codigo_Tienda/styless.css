@@ -270,6 +270,8 @@ nav a:hover {
     .price-btn {
         width:  120px; /* Ajusta el ancho del botón al 100% del contenedor del producto */
         margin-top: -10px;
+        height: 40px;
+        border-radius: 20;
     }
     .product-info h2{
        width: 120px;
