@@ -1,25 +1,25 @@
-
-*{
- margin: 0;
- padding: 0;   
- color: white;
- font-family: "Lato", sans-serif;
- font-weight: bold;
+* {
+    margin: 0;
+    padding: 0;
+    color: white;
+    font-family: "Lato", sans-serif;
+    font-weight: bold;
 }
 
-html{
+html {
     width: 100%;
     height: 100%;
     position: absolute;
 }
-body{
+
+body {
     width: 100%;
     height: 100%;
     overflow-x: hidden;
     overflow-y: hidden;
 }
 
-.topBar{
+.topBar {
     background-color: #253038;
     width: 100vw;
     height: 15vh;
@@ -31,7 +31,7 @@ body{
     padding-right: 5vw;
 }
 
-.bodyMenu{
+.bodyMenu {
     position: absolute;
     background-color: #2F3B44;
     background-image: url("./recursos/piuramapa.png");
@@ -43,45 +43,52 @@ body{
     top: 15%;
     left: 0%;
 }
-.levelsDispos{
+
+.levelsDispos {
     position: absolute;
     width: 100vw;
     height: 100vh;
     z-index: 2;
-    top:0%;
+    top: -2%;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-.topBar_left{
+
+.topBar_left {
     display: flex;
     width: 12vw;
     height: 60%;
     justify-content: space-evenly;
     align-items: center;
 }
-.userProfile{
+
+.userProfile {
     box-sizing: border-box;
     border-radius: 1.5em;
     width: 4vw;
     height: auto;
     margin-right: 2vw;
 }
-.coinIcon{
+
+.coinIcon {
     width: 2vw;
     height: auto;
 }
-.storeIcon{
+
+.storeIcon {
     width: 3vw;
     height: auto;
 }
-.topBar_right{
+
+.topBar_right {
     display: flex;
     width: 24vw;
     height: 60%;
     justify-content: space-around;
 }
-.rounded{
+
+.rounded {
     background: #2F3B44;
     box-sizing: border-box;
     border-radius: 1em;
@@ -94,108 +101,226 @@ body{
     justify-content: space-evenly;
     align-items: center;
 }
-.coinsPurse{
+
+.coinsPurse {
     width: 8vw;
     height: 80%;
 }
-.storeBtn{
+
+.storeBtn {
     width: 10vw;
     height: 80%;
 }
-.level{
-    width:12vw;
+
+.level {
+    width: 12vw;
     height: 18vh;
     position: absolute;
 }
-.levelgame{
+
+/*HOVER LEVELS*/
+.level:hover {
+    filter: contrast(120%) drop-shadow(0px 10px 4px rgba(0, 0, 0, 0.40));
+    -webkit-filter: contrast(120%) drop-shadow(0px 10px 4px rgba(0, 0, 0, 0.40));
+    -moz-filter: contrast(120%) drop-shadow(0px 10px 4px rgba(0, 0, 0, 0.40));
+    cursor: pointer;
+}
+
+.completelevel:hover {
+    filter: hue-rotate(100deg)brightness(120%) contrast(120%) drop-shadow(10px 10px 4px rgba(0, 0, 0, 0.40));
+    -webkit-filter: hue-rotate(100deg)brightness(120%) contrast(120%) drop-shadow(10px 10px 4px rgba(0, 0, 0, 0.40));
+    -moz-filter: hue-rotate(100deg) brightness(120%) contrast(120%) drop-shadow(10px 10px 4px rgba(0, 0, 0, 0.40));
+}
+
+.levelgame {
     background-image: url("./recursos/gamerojo.png");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
 }
-.levelavion{
+
+.levelavion {
     background-image: url("./recursos/avionrojo.png");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
 }
-.levelfinish{
+
+.levelfinish {
     background-image: url("./recursos/luparojo.png");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
 }
+
+/*LEVEL COMPLETE*/
+.completelevel {
+    filter: hue-rotate(100deg) brightness(120%);
+    -webkit-filter: hue-rotate(100deg) brightness(120%);
+    -moz-filter: hue-rotate(100deg) brightness(120%);
+}
+
+.completecurve {
+    filter: brightness(0) saturate(100%) invert(82%) sepia(61%) saturate(1075%) hue-rotate(38deg) brightness(93%) contrast(85%);
+    -webkit-filter: brightness(0) saturate(100%) invert(82%) sepia(61%) saturate(1075%) hue-rotate(38deg) brightness(93%) contrast(85%);
+}
+
 /*LEVELS COMPOSITION*/
-.level01{
+.level01 {
     bottom: 5%;
     left: 5%;
 }
-.level02{
+
+.level02 {
     bottom: 30%;
     left: 12%;
 }
-.level03{
+
+.level03 {
     background-image: url("./recursos/sede1rojo.png");
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: center;
-    bottom: 56%;
-    left: 12%;
-}
-.level04{
-    bottom: 65%;
-    left: 25%;
-}
-.level05{
-    bottom: 35%;
-    left: 32%;
-}
-.level06{
-    background-image: url("./recursos/sede2rojo.png");
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: center;
-    bottom: 3%;
-    left: 38%;
-}
-.level07{
-    bottom: 25%;
-    left: 50%;
-}
-.level08{
-    bottom: 55%;
-    left: 50%;
-}
-.level09{
-    background-image: url("./recursos/sede3rojo.png");
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: center;
-    bottom: 55%;
-    left: 65%;
-}
-.level10{
-    bottom: 45%;
-    left: 80%;
-}
-.level11{
-    bottom: 5%;
-    left: 65%;
-}
-.level12{
-    bottom: 5%;
-    left: 82%;
-}
-.alumnocursor{
-    width: 3vw;
-    height: 3vw;
-    background-image: url(./recursos/alumnocursor.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    box-sizing: border-box;
-    border-radius: 2em;
+    bottom: 56%;
+    left: 12%;
 }
+
+.level04 {
+    bottom: 65%;
+    left: 25%;
+}
+
+.level05 {
+    bottom: 35%;
+    left: 32%;
+}
+
+.level06 {
+    background-image: url("./recursos/sede2rojo.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    bottom: 3%;
+    left: 38%;
+}
+
+.level07 {
+    bottom: 25%;
+    left: 50%;
+}
+
+.level08 {
+    bottom: 55%;
+    left: 50%;
+}
+
+.level09 {
+    background-image: url("./recursos/sede3rojo.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    bottom: 55%;
+    left: 65%;
+}
+
+.level10 {
+    bottom: 45%;
+    left: 80%;
+}
+
+.level11 {
+    bottom: 5%;
+    left: 65%;
+}
+
+.level12 {
+    bottom: 5%;
+    left: 82%;
+}
+
+/*CURVES COMPOSITIONS*/
+.curve {
+    position: absolute;
+    width: 10vw;
+}
+
+.lvl1to2 {
+    bottom: 14%;
+    left: 13%;
+    transform: rotate(87deg);
+}
+
+.lvl2to3 {
+    bottom: 41.5%;
+    left: 7%;
+    transform: rotate(234deg);
+}
+
+.lvl3to4 {
+    width: 8vw;
+    height: auto;
+    bottom: 72%;
+    left: 19.5%;
+    transform: rotate(317deg);
+}
+
+.lvl4to5 {
+    bottom: 54%;
+    left: 33%;
+    transform: rotate(37deg);
+}
+
+.lvl5to6 {
+    bottom: 19%;
+    left: 33%;
+    transform: rotate(213deg);
+}
+
+.lvl6to7 {
+    bottom: 10.5%;
+    left: 47%;
+    transform: rotate(96deg);
+}
+
+.lvl7to8 {
+    width: 11vw;
+    bottom: 37.5%;
+    left: 54%;
+    transform: rotate(59deg);
+}
+
+.lvl8to9 {
+    width: 11vw;
+    bottom: 37.5%;
+    left: 54%;
+    transform: rotate(59deg);
+}
+
+.lvl9to10 {
+    bottom: 65.5%;
+    left: 58.5%;
+    transform: rotate(331deg);
+}
+
+.lvl10to11 {
+    bottom: 60.5%;
+    left: 73.5%;
+    transform: rotate(358deg);
+}
+
+.lvl11to12 {
+    width: 15vw;
+    bottom: 26.5%;
+    left: 68.5%;
+    transform: rotate(274deg);
+}
+
+.lvl12tofinal {
+    bottom: -0.5%;
+    left: 74.5%;
+    transform: rotate(150deg);
+}
+
 
 /*ARREGLO DE ALGUNAS RESOLUCIONES <3*/
 @media (max-width: 1000px) {
@@ -212,6 +337,7 @@ body{
         width: 11vw;
         height: 60%;
     }
+
     .storeBtn {
         width: 11vw;
         height: 60%;
@@ -222,13 +348,13 @@ body{
 /*MOBILE TECHNIQUE FOR YOU MY LOVE*/
 
 @media (max-width: 600px) {
-    body{
+    body {
         width: 100%;
         height: 100%;
         overflow-x: scroll;
         overflow-y: scroll;
     }
-    
+
     .userProfile {
         box-sizing: border-box;
         border-radius: 1.5em;
@@ -236,6 +362,7 @@ body{
         height: auto;
         margin-right: 2vw;
     }
+
     .topBar_right {
         display: flex;
         width: 24vw;
@@ -244,6 +371,7 @@ body{
         justify-content: space-around;
         flex-direction: column;
     }
+
     .coinsPurse {
         width: 80%;
         height: 40%;
@@ -252,13 +380,16 @@ body{
         padding-left: 15%;
         padding-right: 15%;
     }
-    .coinIcon{
+
+    .coinIcon {
         width: 3.3vw;
     }
+
     .storeBtn {
         width: 80%;
         height: 40%;
     }
+
     .rounded {
         background: #2F3B44;
         box-sizing: border-box;
@@ -272,6 +403,7 @@ body{
         justify-content: space-evenly;
         align-items: center;
     }
+
     .topBar {
         background-color: #253038;
         width: 100vw;
@@ -287,6 +419,7 @@ body{
         left: 0%;
         z-index: 4;
     }
+
     .bodyMenu {
         position: fixed;
         background-color: #2F3B44;
@@ -300,7 +433,8 @@ body{
         left: 0%;
         z-index: 1;
     }
-    .levelsDispos{
+
+    .levelsDispos {
         position: absolute;
         width: 100vw;
         height: 250vh;
@@ -310,67 +444,79 @@ body{
         flex-direction: column;
         align-items: center;
     }
-    .level{
+
+    .level {
         height: 22vh;
         width: 15vh;
         position: unset;
     }
 
-    .level01{
+    .level01 {
         bottom: 90%;
         margin-right: 20vw;
     }
-    .level02{
+
+    .level02 {
         bottom: 81.6%;
         margin-left: 40vw;
     }
-    .level03{
+
+    .level03 {
         bottom: 73.2%;
         margin-right: 20vw;
     }
-    .level04{
+
+    .level04 {
         bottom: 64.8%;
         margin-left: 40vw;
     }
-    .level05{
+
+    .level05 {
         bottom: 56.4%;
         margin-right: 20vw;
     }
-    .level06{
+
+    .level06 {
         bottom: 48%;
         margin-left: 40vw;
     }
-    .level07{
+
+    .level07 {
         bottom: 39.6%;
         margin-right: 20vw;
     }
-    .level08{
+
+    .level08 {
         bottom: 31.2%;
         margin-left: 40vw;
     }
-    .level09{
+
+    .level09 {
         bottom: 22.8%;
         margin-right: 20vw;
     }
-    .level10{
+
+    .level10 {
         bottom: 14.4%;
         margin-left: 40vw;
     }
-    .level11{
+
+    .level11 {
         bottom: 6%;
         margin-right: 20vw;
     }
-    .level12{
+
+    .level12 {
         bottom: -2.4%;
         margin-left: 40vw;
     }
 
-  }
+}
 
-  /*RESOLUCIÓN 450 EN MAPA*/
+/*RESOLUCIÓN 450 EN MAPA*/
 
-  @media (max-width: 450px) {
+@media (max-width: 450px) {
     .bodyMenu {
         background-image: url(./recursos/piuramapamobile.png);
     }
-  }
+}
