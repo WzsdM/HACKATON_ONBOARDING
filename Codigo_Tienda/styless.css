@@ -251,7 +251,7 @@ nav a:hover {
     /*FIn estilos responsive de informacion*/
 
 /* Estilos responsive de los productos */
-@media (max-width: 360px) {
+@media (max-width: 100px) {
     .product {
         flex: 1 1 calc(50% - 10px); /* Dos productos por fila, con un gap más pequeño */
     }
@@ -267,15 +267,13 @@ nav a:hover {
     }
 }
 
-@media (max-width: 360px) {
+@media (max-width: 100px) {
     .products-container {
-        justify-content: flex-start; /* Alinea los productos a la izquierda en dispositivos pequeños */
+        justify-content: flex; /* Alinea los productos a la izquierda en dispositivos pequeños */
         align-items: center;
     }
     
-    .product {
-        max-width: calc(50% - 20px); /* Limita el ancho máximo de los productos a la mitad del contenedor */
-    }
+   
 }
 /*Fin estilos responsive productos*/
 
