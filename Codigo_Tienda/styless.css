@@ -217,7 +217,7 @@ nav a:hover {
 
 /*Estilos del responsive*/
 /*Estilos responsive del header*/
-@media (max-width: 768px) {
+@media (max-width: 360px) {
     nav {
         flex-direction: column;
         width: 100%;
@@ -241,40 +241,55 @@ nav a:hover {
 /*Fin esitlos responsive del header*/
     
 /* Estilos responsive de la informacion */
-@media (max-width: 768px) {
+@media (max-width: 360px) {
       .left-info,
       .right-info {
           flex-basis: 100%; /* Cambia el tamaño de las cajas a 100% del ancho disponible */
           margin-right: 0; /* Elimina el margen derecho en dispositivos pequeños */
         }
+        .right-info h2 {
+            font-size: 18px;
+        }
 }
     /*FIn estilos responsive de informacion*/
 
 /* Estilos responsive de los productos */
-@media (max-width: 100px) {
-    .product {
-        flex: 1 1 calc(50% - 10px); /* Dos productos por fila, con un gap más pequeño */
+@media (max-width: 360px) {
+    /* Estilos para hacerlo responsive */
+    .products-container {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+
+    }   
+    .product{
+        width: 120px;
+        height: 210px;
+        
     }
+    .price-btn {
+        width:  120px; /* Ajusta el ancho del botón al 100% del contenedor del producto */
+        margin-top: -10px;
+    }
+    .product-info h2{
+       width: 120px;
 
+       font-size: 12px;
+    }
+    .product .img-producto {
+        width: 120px;
+        height: 120px;
 
-    .product img {
-        width: 40%;
-        margin-right: 20px;
     }
 
     .product-info {
-        width: 60%;
+        width: 120px;
+
     }
+
 }
 
-@media (max-width: 100px) {
-    .products-container {
-        justify-content: flex; /* Alinea los productos a la izquierda en dispositivos pequeños */
-        align-items: center;
-    }
-    
-   
-}
+
 /*Fin estilos responsive productos*/
 
 
