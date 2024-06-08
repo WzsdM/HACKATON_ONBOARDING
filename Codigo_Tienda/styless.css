@@ -87,7 +87,13 @@ nav a:hover {
 .right-info {
     flex: 1; /* Ocupa el espacio disponible */
     padding: 20px;
-    margin-bottom: 10px; /* Espacio entre las cajas de información */
+   align-items: center;
+}
+.left-info h2{
+    font-size: 20px;
+}
+.right-info h2{
+    font-size: 10px;
 }
 .right-info{
     display: flex;
@@ -96,13 +102,15 @@ nav a:hover {
 .left-info {
     margin-right: 0; /* Elimina el margen derecho en dispositivos pequeños */
 }
-.right-info select {
-    padding: 5px;
-    border: 1px solid #ccc;
+.right-info p {
     border-radius: 5px;
-    font-size: 14px;
+    font-size: 15px;
     background-color: #253038;
     color: white;
+    margin-left: 10px;
+    padding-left: 50px;
+    padding-right: 50px;
+    border-radius: 20px; /* Agrega bordes redondos */
 }
 
 .right-info select:focus {
