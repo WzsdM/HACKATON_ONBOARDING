@@ -15,8 +15,17 @@
     </button>
 
     <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <?php include("/xampp/htdocs/HACKATON_ONBOARDING/confirmation-modal/confirmation.php"); ?>
+    </div>
 
-    <?php include("/xampp/htdocs/HACKATON_ONBOARDING/confirmation-modal/confirmation.php");?>
+
+    <!-- Botón para abrir el modal -->
+    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#information">
+        Information
+    </button>
+
+    <div class="modal fade" id="information" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <?php include("/xampp/htdocs/HACKATON_ONBOARDING/information-modal/information.php"); ?>
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>

@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+body{
+    font-family: 'Inter', consolas;
+}
+#content_info{
+    background-color: #2F3B44;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    padding: 50px;
+    border-radius: 20px;
+}
+.title{
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.info{
+    padding: 0 60px 0 60px;
+    text-align: center;
+    line-height: 25px;
+}
