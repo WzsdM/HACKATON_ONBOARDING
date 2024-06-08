@@ -5,6 +5,11 @@
  font-family: Arial, Helvetica, sans-serif;
  font-weight: bold;
 }
+html{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
 body{
     width: 100%;
     height: 100%;
@@ -16,22 +21,30 @@ body{
     background-color: #253038;
     width: 100vw;
     height: 15vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+    padding-left: 5vw;
+    padding-right: 5vw;
 }
 
 .bodyMenu{
+    position: absolute;
     background-color: #2F3B44;
+    background-image: url("/menupage/recursos/piuramapa.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
     width: 100vw;
     height: 85vh;
-    position: absolute;
     top: 15%;
+    left: 0%;
 }
 .topBar_left{
     display: flex;
     width: 12vw;
     height: 60%;
-    position: relative;
-    left: 8%;
-    top: 20%;
     justify-content: space-evenly;
     align-items: center;
 }
@@ -40,6 +53,7 @@ body{
     border-radius: 1.5em;
     width: 4vw;
     height: auto;
+    margin-right: 2vw;
 }
 .coinIcon{
     width: 2vw;
@@ -51,31 +65,112 @@ body{
 }
 .topBar_right{
     display: flex;
-    width: 30vw;
+    width: 24vw;
     height: 60%;
-    position: relative;
-    top: -40%;
-    right: -60%;
     justify-content: space-around;
 }
 .rounded{
     background: #2F3B44;
     box-sizing: border-box;
-    border-radius: 1.5em;
-    -webkit-border-radius: 1.5em;
-    -moz-border-radius: 1.5em;
-    -ms-border-radius: 1.5em;
-    -o-border-radius: 1.5em;
+    border-radius: 1em;
+    -webkit-border-radius: 1em;
+    -moz-border-radius: 1em;
+    -ms-border-radius: 1em;
+    -o-border-radius: 1em;
     align-self: center;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
 }
 .coinsPurse{
-    width: 10vw;
+    width: 8vw;
     height: 80%;
 }
 .storeBtn{
-    width: 12vw;
+    width: 10vw;
     height: 80%;
+}
+.level{
+    width:12vw;
+    height: 18vh;
+    position: absolute;
+}
+.levelgame{
+    background-image: url("/menupage/recursos/gamerojo.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.levelavion{
+    background-image: url("/menupage/recursos/avionrojo.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.levelfinish{
+    background-image: url("/menupage/recursos/luparojo.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+/*LEVELS COMPOSITION*/
+.level01{
+    bottom: 5%;
+    left: 5%;
+}
+.level02{
+    bottom: 30%;
+    left: 12%;
+}
+.level03{
+    background-image: url("/menupage/recursos/sede1rojo.png");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+    bottom: 56%;
+    left: 12%;
+}
+.level04{
+    bottom: 65%;
+    left: 25%;
+}
+.level05{
+    bottom: 35%;
+    left: 32%;
+}
+.level06{
+    background-image: url("/menupage/recursos/sede2rojo.png");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+    bottom: 3%;
+    left: 38%;
+}
+.level07{
+    bottom: 25%;
+    left: 50%;
+}
+.level08{
+    bottom: 55%;
+    left: 50%;
+}
+.level09{
+    background-image: url("/menupage/recursos/sede3rojo.png");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+    bottom: 55%;
+    left: 65%;
+}
+.level10{
+    bottom: 45%;
+    left: 80%;
+}
+.level11{
+    bottom: 5%;
+    left: 65%;
+}
+.level12{
+    bottom: 5%;
+    left: 82%;
 }
