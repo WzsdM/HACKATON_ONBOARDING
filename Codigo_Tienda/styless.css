@@ -3,6 +3,7 @@ body {
     font-family: bold, sans-serif;
     background-color: #2F3B44;
 }
+
 /*Estilos de la cabecera, puede ser reemplazada*/
 header {
     background-color: #253038;
@@ -91,29 +92,34 @@ nav a:hover {
     align-items: center;
 }
 .left-info h2{
-    font-size: 20px;
+    font-size: 32px;
 }
 .left-info p {
-    font-size: 10px;
+    font-size: 18px;
 }
 .right-info h2{
-    font-size: 20px;
+    font-family: "Inter", sans-serif;
+    font-size: 18px;
+    padding-right: 18px;
+   
 }
 .right-info{
     display: flex;
+    
 }
 
 .left-info {
     margin-right: 400px; /* Elimina el margen derecho en dispositivos pequeños */
 }
-.right-info p {
+.right-info .text-sede {
+    text-align: center;
+    font-weight: bold;
     border-radius: 5px;
-    font-size: 15px;
+    font-size: 18px;
     background-color: #253038;
     color: white;
-    margin-left: 10px;
-    padding-left: 50px;
-    padding-right: 50px;
+    width: 150px;
+    right: 55px;
     border-radius: 20px; /* Agrega bordes redondos */
 }
 
@@ -126,36 +132,39 @@ nav a:hover {
 .products-container {
     display: flex;
     flex-wrap: wrap;
-    gap: 20px;
+    gap: 60px;
     justify-content: center; /* Centra los productos horizontalmente */
    
 }
 
 .product {
-    
     padding: 10px;
-    width:150px;
-    border-radius: 5px;
-    justify-content: center;
+    width:201px;
+    height: 303px;
+
+    padding: fixed;
+    align-items: center;
 }
 
 .product .img-producto {
-   width: 200px;
-   height: 200px;
-    
-}
+    width: 201px;
+    height: 200px;
 
-.product-info {
-    padding: 10px;   
 }
 
 .product-info h2 {
-    font-family: medium;
+   text-align: center;
+}
+
+.product-info h2 {
+    font-family: "Inter", sans-serif;
+    font-weight: 100;
     width: 201px;
     height: 27px;
     font-size: 18px;
     line-height: 150%;
     color: white;
+    margin-bottom: 14px;
 }
 .product .price-agotado{
     background-color: #1B2F3F;
@@ -169,22 +178,34 @@ nav a:hover {
     border-radius: 5px;
 }
 .price-btn {
+    display: flex;
+    width: 210px;
+    align-items: center;
+    height: 48px;
     background-color: #1B2F3F;
     border: none;
     color: white;
-    padding: 10px 20px;
-    text-align: center;
-    text-decoration: none;
-    display: flex;
-    font-size: 16px;
+    padding: 10px 49px;
+    text-decoration: none;   
     border-radius: 20px;
     cursor: pointer;
     transition-duration: 0.4s;
+    justify-content: center;
+}
+.price-btn .texto-btn{
+    font-weight: bold;
+    font-size: 16px;
+    width:45 ;
+    height: 23;
+    font-size: 16;
+    line-height: 150%;
+    padding-left: 20px;
 }
 .price-btn .btn-icon{
-    width: 15px;
-    height: 15px;
+    width: 25px;
+    height: 25px;
     margin-left: 5px;
+
 }
 
 .price-btn:hover {
