@@ -1,6 +1,7 @@
 body {
     margin: 0;
     font-family: bold, sans-serif;
+    background-color: #2F3B44;
 }
 
 header {
@@ -76,6 +77,37 @@ nav a:hover {
     margin: 4px 0;
 }
 
+.info-box {
+    display: flex;
+    flex-wrap: wrap; /* Permite que los elementos se envuelvan cuando el espacio es limitado */
+    color: white;
+}
+
+.left-info,
+.right-info {
+    flex: 1; /* Ocupa el espacio disponible */
+    padding: 20px;
+    margin-bottom: 10px; /* Espacio entre las cajas de información */
+}
+.right-info{
+    display: flex;
+}
+
+.left-info {
+    margin-right: 0; /* Elimina el margen derecho en dispositivos pequeños */
+}
+.right-info select {
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+    background-color: #253038;
+    color: white;
+}
+
+.right-info select:focus {
+    outline: none; /* Elimina el borde de enfoque */
+}
 @media (max-width: 768px) {
     nav {
         flex-direction: column;
@@ -95,6 +127,17 @@ nav a:hover {
 
     nav.active {
         display: flex;
+    }
+    
+
+    
+    /* Estilos para dispositivos con un ancho máximo de 768px */
+    @media (max-width: 768px) {
+        .left-info,
+        .right-info {
+            flex-basis: 100%; /* Cambia el tamaño de las cajas a 100% del ancho disponible */
+            margin-right: 0; /* Elimina el margen derecho en dispositivos pequeños */
+        }
     }
 }
 
