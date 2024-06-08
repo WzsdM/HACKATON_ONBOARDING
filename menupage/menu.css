@@ -1,10 +1,12 @@
+
 *{
  margin: 0;
  padding: 0;   
  color: white;
- font-family: Arial, Helvetica, sans-serif;
+ font-family: "Lato", sans-serif;
  font-weight: bold;
 }
+
 html{
     width: 100%;
     height: 100%;
@@ -32,7 +34,7 @@ body{
 .bodyMenu{
     position: absolute;
     background-color: #2F3B44;
-    background-image: url("/menupage/recursos/piuramapa.png");
+    background-image: url("./recursos/piuramapa.png");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -40,6 +42,16 @@ body{
     height: 85vh;
     top: 15%;
     left: 0%;
+}
+.levelsDispos{
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    z-index: 2;
+    top:0%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 .topBar_left{
     display: flex;
@@ -96,19 +108,19 @@ body{
     position: absolute;
 }
 .levelgame{
-    background-image: url("/menupage/recursos/gamerojo.png");
+    background-image: url("./recursos/gamerojo.png");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
 }
 .levelavion{
-    background-image: url("/menupage/recursos/avionrojo.png");
+    background-image: url("./recursos/avionrojo.png");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
 }
 .levelfinish{
-    background-image: url("/menupage/recursos/luparojo.png");
+    background-image: url("./recursos/luparojo.png");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -123,7 +135,7 @@ body{
     left: 12%;
 }
 .level03{
-    background-image: url("/menupage/recursos/sede1rojo.png");
+    background-image: url("./recursos/sede1rojo.png");
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center;
@@ -139,7 +151,7 @@ body{
     left: 32%;
 }
 .level06{
-    background-image: url("/menupage/recursos/sede2rojo.png");
+    background-image: url("./recursos/sede2rojo.png");
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center;
@@ -155,7 +167,7 @@ body{
     left: 50%;
 }
 .level09{
-    background-image: url("/menupage/recursos/sede3rojo.png");
+    background-image: url("./recursos/sede3rojo.png");
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center;
@@ -174,3 +186,191 @@ body{
     bottom: 5%;
     left: 82%;
 }
+.alumnocursor{
+    width: 3vw;
+    height: 3vw;
+    background-image: url(./recursos/alumnocursor.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    box-sizing: border-box;
+    border-radius: 2em;
+}
+
+/*ARREGLO DE ALGUNAS RESOLUCIONES <3*/
+@media (max-width: 1000px) {
+
+    .topBar_right {
+        display: flex;
+        width: 24vw;
+        height: 60%;
+        font-size: small;
+        justify-content: space-around;
+    }
+
+    .coinsPurse {
+        width: 11vw;
+        height: 60%;
+    }
+    .storeBtn {
+        width: 11vw;
+        height: 60%;
+    }
+
+}
+
+/*MOBILE TECHNIQUE FOR YOU MY LOVE*/
+
+@media (max-width: 600px) {
+    body{
+        width: 100%;
+        height: 100%;
+        overflow-x: scroll;
+        overflow-y: scroll;
+    }
+    
+    .userProfile {
+        box-sizing: border-box;
+        border-radius: 1.5em;
+        width: 8vw;
+        height: auto;
+        margin-right: 2vw;
+    }
+    .topBar_right {
+        display: flex;
+        width: 24vw;
+        height: 60%;
+        font-size: 0.7em;
+        justify-content: space-around;
+        flex-direction: column;
+    }
+    .coinsPurse {
+        width: 80%;
+        height: 40%;
+        justify-content: space-around;
+        box-sizing: border-box;
+        padding-left: 15%;
+        padding-right: 15%;
+    }
+    .coinIcon{
+        width: 3.3vw;
+    }
+    .storeBtn {
+        width: 80%;
+        height: 40%;
+    }
+    .rounded {
+        background: #2F3B44;
+        box-sizing: border-box;
+        border-radius: 2em;
+        -webkit-border-radius: 2em;
+        -moz-border-radius: 2em;
+        -ms-border-radius: 2em;
+        -o-border-radius: 2em;
+        align-self: center;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    .topBar {
+        background-color: #253038;
+        width: 100vw;
+        height: 15vh;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        box-sizing: border-box;
+        padding-left: 10vw;
+        padding-right: 10vw;
+        position: fixed;
+        top: 0%;
+        left: 0%;
+        z-index: 4;
+    }
+    .bodyMenu {
+        position: fixed;
+        background-color: #2F3B44;
+        background-image: url(./recursos/piuramapa.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        width: 100vw;
+        height: 100vh;
+        top: 15%;
+        left: 0%;
+        z-index: 1;
+    }
+    .levelsDispos{
+        position: absolute;
+        width: 100vw;
+        height: 250vh;
+        z-index: 2;
+        top: 15%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .level{
+        height: 22vh;
+        width: 15vh;
+        position: unset;
+    }
+
+    .level01{
+        bottom: 90%;
+        margin-right: 20vw;
+    }
+    .level02{
+        bottom: 81.6%;
+        margin-left: 40vw;
+    }
+    .level03{
+        bottom: 73.2%;
+        margin-right: 20vw;
+    }
+    .level04{
+        bottom: 64.8%;
+        margin-left: 40vw;
+    }
+    .level05{
+        bottom: 56.4%;
+        margin-right: 20vw;
+    }
+    .level06{
+        bottom: 48%;
+        margin-left: 40vw;
+    }
+    .level07{
+        bottom: 39.6%;
+        margin-right: 20vw;
+    }
+    .level08{
+        bottom: 31.2%;
+        margin-left: 40vw;
+    }
+    .level09{
+        bottom: 22.8%;
+        margin-right: 20vw;
+    }
+    .level10{
+        bottom: 14.4%;
+        margin-left: 40vw;
+    }
+    .level11{
+        bottom: 6%;
+        margin-right: 20vw;
+    }
+    .level12{
+        bottom: -2.4%;
+        margin-left: 40vw;
+    }
+
+  }
+
+  /*RESOLUCIÓN 450 EN MAPA*/
+
+  @media (max-width: 450px) {
+    .bodyMenu {
+        background-image: url(./recursos/piuramapamobile.png);
+    }
+  }
