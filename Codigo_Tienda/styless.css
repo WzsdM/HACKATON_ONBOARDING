@@ -123,13 +123,21 @@ nav a:hover {
 /*Fin estilos del texto*/
 
 /*Estilos del producto*/
-.product {
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    padding: 10px;
-    margin-bottom: 20px;
+.products-container {
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center; /* Centra los productos horizontalmente */
+  
+}
+
+.product {
+    background-color: #253038;
+    padding: 10px;
+    flex: 1;
+    max-width: 300px;
+    border-radius: 5px;
+    
 }
 
 .product img {
@@ -146,16 +154,29 @@ nav a:hover {
     margin-top: 0;
 }
 
-.price {
-    font-size: 1.2em;
-    font-weight: bold;
-    color: #333;
+.price-btn {
+    background-color: #1B2F3F;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition-duration: 0.4s;
+}
+
+.price-btn:hover {
+    background-color: #2F3B44;
 }
 /*Fin estilos del producto*/
 
 
 
 /*Estilos del responsive*/
+/*Estilos responsive del header*/
 @media (max-width: 768px) {
     nav {
         flex-direction: column;
@@ -176,16 +197,44 @@ nav a:hover {
     nav.active {
         display: flex;
     }
+} 
+/*Fin esitlos responsive del header*/
     
-
-    
-    /* Estilos para dispositivos con un ancho máximo de 768px */
-    @media (max-width: 768px) {
-        .left-info,
-        .right-info {
-            flex-basis: 100%; /* Cambia el tamaño de las cajas a 100% del ancho disponible */
-            margin-right: 0; /* Elimina el margen derecho en dispositivos pequeños */
+/* Estilos responsive de la informacion */
+@media (max-width: 768px) {
+      .left-info,
+      .right-info {
+          flex-basis: 100%; /* Cambia el tamaño de las cajas a 100% del ancho disponible */
+          margin-right: 0; /* Elimina el margen derecho en dispositivos pequeños */
         }
+}
+    /*FIn estilos responsive de informacion*/
+
+/* Estilos responsive de los productos */
+@media (min-width: 768px) {
+    .product {
+        flex-direction: row;
+    }
+
+    .product img {
+        width: 40%;
+        margin-right: 20px;
+    }
+
+    .product-info {
+        width: 60%;
     }
 }
+
+@media (max-width: 768px) {
+    .products-container {
+        justify-content: flex-start; /* Alinea los productos a la izquierda en dispositivos pequeños */
+    }
+    
+    .product {
+        max-width: calc(50% - 20px); /* Limita el ancho máximo de los productos a la mitad del contenedor */
+    }
+}
+/*Fin estilos responsive productos*/
+
 
