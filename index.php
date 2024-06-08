@@ -12,7 +12,7 @@
 <body>
     <!-- CANJEO COINS -->
     <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#coins">
-        Coins    
+        Coins
     </button>
 
     <div class="modal fade" id="coins" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
