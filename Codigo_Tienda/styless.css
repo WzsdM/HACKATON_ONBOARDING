@@ -1,6 +1,6 @@
 body {
     margin: 0;
-    font-family: Arial, sans-serif;
+    font-family: bold, sans-serif;
 }
 
 header {
@@ -11,11 +11,25 @@ header {
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
+    
 }
 
-.logo {
-    font-size: 1.5rem;
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo-img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.logo-text {
+    font-size: 1rem;
     font-weight: bold;
+    line-height: 1.2; /* Ajusta la altura de la línea para un mejor espaciado */
 }
 
 nav {
@@ -68,3 +82,4 @@ nav a:hover {
         display: flex;
     }
 }
+
