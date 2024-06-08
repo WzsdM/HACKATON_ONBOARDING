@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Rompecabezas</title>
     <!-- css -->
-    <!-- <link rel="stylesheet" href="/HACKATON_ONBOARDING/juego-rompecabezas/mobile.css" /> -->
+    <link rel="stylesheet" href="mobile.css" />
     <!-- tablet css -->
     <!-- <link
       rel="stylesheet"
@@ -19,7 +19,7 @@
       href="./css/desktop.css"
       media="screen and (min-width: 1024px)" /> -->
     <!-- js -->
-    <script src="/HACKATON_ONBOARDING/juego-rompecabezas/main.js" defer></script>
+    <script src="main.js" defer></script>
   </head>
 
   <body>

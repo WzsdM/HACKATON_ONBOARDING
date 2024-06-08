@@ -66,14 +66,7 @@
         <?php include("/xampp/htdocs/HACKATON_ONBOARDING/juego-memory/juego.php"); ?>
     </div>
 
-    <!-- JUEGO - ROMPECABEZAS -->
-    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#juegor">
-        Juego Rompecabezas
-    </button>
-
-    <div class="modal fade" id="juegor" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-        <?php include("/xampp/htdocs/HACKATON_ONBOARDING/juego-rompecabezas/juego.php"); ?>
-    </div>
+    
 </body>
 
 </html>
