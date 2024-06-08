@@ -1,4 +1,3 @@
-<script src="https://unpkg.com/akar-icons-fonts"></script>
 <link rel="stylesheet" href="./information-modal/information.css">
 <div class="modal-dialog modal-dialog-centered">
   <div class="modal-content px-4 py-4" id="content_info">
