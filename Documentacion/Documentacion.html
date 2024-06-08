@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>División de Página</title>
+    <link rel="stylesheet" href="styless.css">
+</head>
+<body>
+    <div class="page-container">
+        <section class="left-section">
+            <nav class="sidebar-menu">
+                <ul>
+                    <li><a href="#" onclick="showContent('content1')">Minijuegos</a></li>
+                    <li><a href="#" onclick="showContent('content2')">Login</a></li>
+                    <li><a href="#" onclick="showContent('content3')">Tienda</a></li>
+                    <li><a href="#" onclick="showContent('content4')">Ventanas emergentes</a></li>
+                </ul>
+            </nav>
+        </section>
+        <!--Seccion de minijuegos-->
+        <section class="right-section">
+            <h2>Documentacion</h2>
+            <div id="content1" class="content">
+                <h1>Titulo: Minijuegos</h1>
+                <img src="https://via.placeholder.com/300">
+                <p>Ingrese el titulo</p>
+                <h2>Variables</h2><!--Definir sus variables de los minijuegos-->
+                <p>Ingrese variables</p>
+                <h2>Eventos</h2>
+                <p>Ingrese eventos</p>
+            </div>
+            <!--Seccion de Login-->
+            <div id="content2" class="content" style="display: none;">
+                <h1>Titulo: Login</h1>
+                <img src="https://via.placeholder.com/300">
+                <p>Ingrese el titulo</p>
+                <h2>Variables</h2><!--Definir sus variables de los minijuegos-->
+                <p>Ingrese variables</p>
+                <h2>Eventos</h2>
+                <p>Ingrese eventos</p>
+            </div>
+            <!--Seccion de tienda-->
+            <div id="content3" class="content" style="display: none;">
+                <h1>Titulo: Tienda</h1>
+                <img src="https://via.placeholder.com/300">
+                <p>Ingrese el titulo</p>
+                <h2>Variables</h2><!--Definir sus variables de los minijuegos-->
+                <p>Ingrese variables</p>
+                <h2>Eventos</h2>
+                <p>Ingrese eventos</p>
+            </div>
+            <!--Seccion ventanas emergentes-->
+            <div id="content4" class="content" style="display: none;">
+                <h1>Titulo: Ventanas emergentes</h1>
+                <img src="https://via.placeholder.com/300">
+                <p>Ingrese el titulo</p>
+                <h2>Variables</h2><!--Definir sus variables de los minijuegos-->
+                <p>Ingrese variables</p>
+                <h2>Eventos</h2>
+                <p>Ingrese eventos</p>
+            </div>
+        </section>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>
