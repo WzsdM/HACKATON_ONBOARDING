@@ -5,9 +5,10 @@
 <link rel="stylesheet" href="/HACKATON_ONBOARDING/quiz-modal/style.css">
 
 <div class="modal-dialog  modal-dialog-centered">
-    <div class="modal-content  w-auto" id="quiz">
+    <div class="modal-content" id="quiz">
                
-            
+<!-- Icon Cerrar-->
+
  <!-- start Quiz button -->
  <div class="start_btn"><button>Iniciar Quiz</button></div>
 
