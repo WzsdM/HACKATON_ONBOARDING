@@ -209,7 +209,7 @@ nav a:hover {
 }
 
 .price-btn:hover {
-    background-color: #2F3B44;
+    background-color: #D9D9D9;
 }
 /*Fin estilos del producto*/
 
@@ -260,7 +260,6 @@ nav a:hover {
         display: flex;
         flex-wrap: wrap;
         gap: 10px;
-
     }   
     .product{
         width: 120px;
