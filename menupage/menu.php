@@ -6,6 +6,16 @@
     <title>Menú</title>
 </head>
 <body>
-    <div></div>
+    <div class="topBar">
+        <div class="topBar_left">
+            <div class="userImg"></div>
+            <div class="userName"></div>
+        </div>
+        <div class="topBar_right">
+            <div class="coinsPurse"></div>
+            <div class="storeBtn"></div>
+
+        </div>
+    </div>
 </body>
 </html>
