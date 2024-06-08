@@ -23,18 +23,19 @@
 .start_btn button{
     font-size: 25px;
     font-weight: 500;
-    color: #007bff;
-    padding: 15px 30px;
+    background-color: #1B2F3F;
+    padding: 10px 30px 10px 30px;
     outline: none;
     border: none;
     border-radius: 5px;
-    background: #fff;
+    color: #fff;
     cursor: pointer;
 }
 
 .info_box{
     width: 540px;
-    background: #fff;
+    color: #fff;
+    background: #1B2F3F;
     border-radius: 5px;
     transform: translate(-50%, -50%) scale(0.9);
     opacity: 0;
@@ -68,12 +69,13 @@
     color: #007bff;
 }
 .info_box .buttons{
+    width: 100%;
     height: 60px;
     display: flex;
     align-items: center;
-    justify-content: flex-end;
+    justify-content: center;
     padding: 0 30px;
-    border-top: 1px solid lightgrey;
+   
 }
 
 .info_box .buttons button{
