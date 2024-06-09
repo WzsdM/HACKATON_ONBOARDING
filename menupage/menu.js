@@ -17,8 +17,10 @@ function controlarNiveles() {
   const nivelesSuperiores = document.querySelectorAll(".level");
   nivelesSuperiores.forEach((nivel) => {
     const nivelNum = parseInt(nivel.classList[0].replace("level", ""));
-    if (nivelNum > nivelUsuario) {//AQUI YEICOT
+    if (nivelNum != nivelUsuario) {//AQUI YEICOT
       nivel.style.pointerEvents = "none";
+    }
+    if(nivelNum > nivelUsuario){
       nivel.style.opacity = "0.5"; // Cambia la opacidad para indicar que está desactivado
     }
   });

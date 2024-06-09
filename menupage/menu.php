@@ -71,7 +71,7 @@
             <div class="level04 levelgame level">
 
             </div>
-            <img src="./recursos/curve.png" class="curve lvl4to5" />
+            <div class="level04 levelgame level completelevel" type="button" data-bs-toggle="modal" data-bs-target="#level4"></div>
             <div class="level05 levelavion level">
 
             </div>
