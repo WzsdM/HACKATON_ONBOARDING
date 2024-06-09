@@ -4,6 +4,7 @@
     color: white;
     font-family: "Lato", sans-serif;
     font-weight: bold;
+    font-size: small;
 }
 
 html {
@@ -67,10 +68,17 @@ body {
 
 .userProfile {
     box-sizing: border-box;
-    border-radius: 1.5em;
+    border-radius: 2em;
     width: 4vw;
     height: auto;
     margin-right: 2vw;
+    -webkit-border-radius: 2em;
+    -moz-border-radius: 2em;
+    -ms-border-radius: 2em;
+    -o-border-radius: 2em;
+}
+.whitetext{
+    font-size: 16px !important;
 }
 
 .coinIcon {
@@ -79,7 +87,7 @@ body {
 }
 
 .storeIcon {
-    width: 3vw;
+    width: 2vw;
     height: auto;
 }
 
