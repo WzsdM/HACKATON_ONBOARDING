@@ -1,0 +1,614 @@
+* {
+    margin: 0;
+    padding: 0;
+    color: white;
+    font-family: "Lato", sans-serif;
+    font-weight: bold;
+}
+
+html {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+.topBar {
+    position: absolute;
+    background-color: #253038;
+    width: 100vw;
+    height: 15vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+    padding-left: 5vw;
+    padding-right: 5vw;
+    z-index: 4;
+}
+
+.bodyMenu {
+    position: absolute;
+    background-color: #2F3B44;
+    background-image: url("./recursos/piuramapa.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100vw;
+    height: 85vh;
+    top: 15%;
+    left: 0%;
+}
+
+.levelsDispos {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    z-index: 2;
+    top: -2%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.topBar_left {
+    display: flex;
+    width: 12vw;
+    height: 60%;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.userProfile {
+    box-sizing: border-box;
+    border-radius: 1.5em;
+    width: 4vw;
+    height: auto;
+    margin-right: 2vw;
+}
+
+.coinIcon {
+    width: 2vw;
+    height: auto;
+}
+
+.storeIcon {
+    width: 3vw;
+    height: auto;
+}
+
+.topBar_right {
+    display: flex;
+    width: 24vw;
+    height: 60%;
+    justify-content: space-around;
+}
+
+.rounded {
+    background: #2F3B44;
+    box-sizing: border-box;
+    border-radius: 1em;
+    -webkit-border-radius: 1em;
+    -moz-border-radius: 1em;
+    -ms-border-radius: 1em;
+    -o-border-radius: 1em;
+    align-self: center;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.coinsPurse {
+    width: 8vw;
+    height: 80%;
+}
+
+.storeBtn {
+    width: 10vw;
+    height: 80%;
+}
+.storeBtn:hover{
+    cursor: pointer;
+}
+
+.level {
+    width: 12vw;
+    height: 18vh;
+    position: absolute;
+}
+
+/*HOVER LEVELS*/
+.level:hover {
+    filter: contrast(120%) drop-shadow(0px 10px 4px rgba(0, 0, 0, 0.40));
+    -webkit-filter: contrast(120%) drop-shadow(0px 10px 4px rgba(0, 0, 0, 0.40));
+    -moz-filter: contrast(120%) drop-shadow(0px 10px 4px rgba(0, 0, 0, 0.40));
+    cursor: pointer;
+}
+
+.completelevel:hover {
+    filter: hue-rotate(100deg)brightness(120%) contrast(120%) drop-shadow(10px 10px 4px rgba(0, 0, 0, 0.40));
+    -webkit-filter: hue-rotate(100deg)brightness(120%) contrast(120%) drop-shadow(10px 10px 4px rgba(0, 0, 0, 0.40));
+    -moz-filter: hue-rotate(100deg) brightness(120%) contrast(120%) drop-shadow(10px 10px 4px rgba(0, 0, 0, 0.40));
+}
+
+.levelgame {
+    background-image: url("./recursos/gamerojo.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.levelavion {
+    background-image: url("./recursos/avionrojo.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.levelfinish {
+    background-image: url("./recursos/luparojo.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+/*LEVEL COMPLETE*/
+.completelevel {
+    filter: hue-rotate(100deg) brightness(120%);
+    -webkit-filter: hue-rotate(100deg) brightness(120%);
+    -moz-filter: hue-rotate(100deg) brightness(120%);
+}
+
+.completecurve {
+    filter: brightness(0) saturate(100%) invert(82%) sepia(61%) saturate(1075%) hue-rotate(38deg) brightness(93%) contrast(85%);
+    -webkit-filter: brightness(0) saturate(100%) invert(82%) sepia(61%) saturate(1075%) hue-rotate(38deg) brightness(93%) contrast(85%);
+}
+
+/*LEVELS COMPOSITION*/
+.level01 {
+    bottom: 5%;
+    left: 5%;
+}
+
+.level02 {
+    bottom: 30%;
+    left: 12%;
+}
+
+.level03 {
+    background-image: url("./recursos/sede1rojo.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    bottom: 56%;
+    left: 12%;
+}
+
+.level04 {
+    bottom: 65%;
+    left: 25%;
+}
+
+.level05 {
+    bottom: 35%;
+    left: 32%;
+}
+
+.level06 {
+    background-image: url("./recursos/sede2rojo.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    bottom: 3%;
+    left: 38%;
+}
+
+.level07 {
+    bottom: 25%;
+    left: 50%;
+}
+
+.level08 {
+    bottom: 55%;
+    left: 50%;
+}
+
+.level09 {
+    background-image: url("./recursos/sede3rojo.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    bottom: 55%;
+    left: 65%;
+}
+
+.level10 {
+    bottom: 45%;
+    left: 80%;
+}
+
+.level11 {
+    bottom: 5%;
+    left: 65%;
+}
+
+.level12 {
+    bottom: 5%;
+    left: 82%;
+}
+
+/*CURVES COMPOSITIONS*/
+.curve {
+    position: absolute;
+    width: 10vw;
+}
+
+.lvl1to2 {
+    bottom: 14%;
+    left: 13%;
+    transform: rotate(87deg);
+}
+
+.lvl2to3 {
+    bottom: 41.5%;
+    left: 7%;
+    transform: rotate(234deg);
+}
+
+.lvl3to4 {
+    width: 8vw;
+    height: auto;
+    bottom: 72%;
+    left: 19.5%;
+    transform: rotate(317deg);
+}
+
+.lvl4to5 {
+    bottom: 54%;
+    left: 33%;
+    transform: rotate(37deg);
+}
+
+.lvl5to6 {
+    bottom: 19%;
+    left: 33%;
+    transform: rotate(213deg);
+}
+
+.lvl6to7 {
+    bottom: 10.5%;
+    left: 47%;
+    transform: rotate(96deg);
+}
+
+.lvl7to8 {
+    width: 11vw;
+    bottom: 37.5%;
+    left: 54%;
+    transform: rotate(59deg);
+}
+
+.lvl8to9 {
+    width: 11vw;
+    bottom: 37.5%;
+    left: 54%;
+    transform: rotate(59deg);
+}
+
+.lvl9to10 {
+    bottom: 65.5%;
+    left: 58.5%;
+    transform: rotate(331deg);
+}
+
+.lvl10to11 {
+    bottom: 60.5%;
+    left: 73.5%;
+    transform: rotate(358deg);
+}
+
+.lvl11to12 {
+    width: 15vw;
+    bottom: 26.5%;
+    left: 68.5%;
+    transform: rotate(274deg);
+}
+
+.lvl12tofinal {
+    bottom: -0.5%;
+    left: 74.5%;
+    transform: rotate(150deg);
+}
+
+
+/*ARREGLO DE ALGUNAS RESOLUCIONES <3*/
+@media (max-width: 1000px) {
+
+    .topBar_right {
+        display: flex;
+        width: 24vw;
+        height: 60%;
+        font-size: small;
+        justify-content: space-around;
+    }
+
+    .coinsPurse {
+        width: 11vw;
+        height: 60%;
+    }
+
+    .storeBtn {
+        width: 11vw;
+        height: 60%;
+    }
+
+}
+
+/*MOBILE TECHNIQUE FOR YOU MY LOVE*/
+
+@media (max-width: 600px) {
+    body {
+        width: 100%;
+        height: 100%;
+        overflow-x: scroll;
+        overflow-y: scroll;
+    }
+
+    .userProfile {
+        box-sizing: border-box;
+        border-radius: 1.5em;
+        width: 8vw;
+        height: auto;
+        margin-right: 2vw;
+    }
+
+    .topBar_right {
+        display: flex;
+        width: 24vw;
+        height: 60%;
+        font-size: 0.7em;
+        justify-content: space-around;
+        flex-direction: column;
+    }
+
+    .coinsPurse {
+        width: 80%;
+        height: 40%;
+        justify-content: space-around;
+        box-sizing: border-box;
+        padding-left: 15%;
+        padding-right: 15%;
+    }
+
+    .coinIcon {
+        width: 3.3vw;
+    }
+
+    .storeBtn {
+        width: 80%;
+        height: 40%;
+    }
+
+    .rounded {
+        background: #2F3B44;
+        box-sizing: border-box;
+        border-radius: 2em;
+        -webkit-border-radius: 2em;
+        -moz-border-radius: 2em;
+        -ms-border-radius: 2em;
+        -o-border-radius: 2em;
+        align-self: center;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    .topBar {
+        background-color: #253038;
+        width: 100vw;
+        height: 15vh;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        box-sizing: border-box;
+        padding-left: 10vw;
+        padding-right: 10vw;
+        position: fixed;
+        top: 0%;
+        left: 0%;
+        z-index: 4;
+    }
+
+    .bodyMenu {
+        position: fixed;
+        background-color: #2F3B44;
+        background-image: url(./recursos/piuramapa.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        width: 100vw;
+        height: 100vh;
+        top: 15%;
+        left: 0%;
+        z-index: 1;
+    }
+
+    .levelsDispos {
+        position: absolute;
+        width: 100vw;
+        height: 250vh;
+        z-index: 2;
+        top: 15%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .level {
+        height: 22vh;
+        width: 15vh;
+        position: unset;
+    }
+
+    .level01 {
+        bottom: 90%;
+        margin-right: 20vw;
+    }
+
+    .level02 {
+        bottom: 81.6%;
+        margin-left: 40vw;
+    }
+
+    .level03 {
+        bottom: 73.2%;
+        margin-right: 20vw;
+    }
+
+    .level04 {
+        bottom: 64.8%;
+        margin-left: 40vw;
+    }
+
+    .level05 {
+        bottom: 56.4%;
+        margin-right: 20vw;
+    }
+
+    .level06 {
+        bottom: 48%;
+        margin-left: 40vw;
+    }
+
+    .level07 {
+        bottom: 39.6%;
+        margin-right: 20vw;
+    }
+
+    .level08 {
+        bottom: 31.2%;
+        margin-left: 40vw;
+    }
+
+    .level09 {
+        bottom: 22.8%;
+        margin-right: 20vw;
+    }
+
+    .level10 {
+        bottom: 14.4%;
+        margin-left: 40vw;
+    }
+
+    .level11 {
+        bottom: 6%;
+        margin-right: 20vw;
+    }
+
+    .level12 {
+        bottom: -2.4%;
+        margin-left: 40vw;
+    }
+
+
+    /*curvas celular*/
+    .curve {
+        width: 25vw;
+    }
+
+    .lvl1to2 {
+        bottom: 90%;
+        left: 41.5%;
+        transform: rotate(10deg);
+    }
+
+    .lvl2to3 {
+        bottom: 79%;
+        left: 41%;
+        transform: rotate(104deg);
+    }
+
+    .lvl3to4 {
+        width: 32vw;
+        height: auto;
+        bottom: 68.5%;
+        left: 26%;
+        transform: rotate(203deg);
+    }
+
+    .lvl4to5 {
+        width: 28vw;
+        bottom: 60.5%;
+        left: 38%;
+        transform: rotate(93deg);
+    }
+
+    .lvl5to6 {
+        width: 28vw;
+        bottom: 52%;
+        left: 33%;
+        transform: rotate(197deg);
+    }
+
+    .lvl6to7 {
+        width: 36vw;
+        bottom: 43%;
+        left: 38%;
+        transform: rotate(98deg);
+    }
+
+    .lvl7to8 {
+        width: 28vw;
+        bottom: 34%;
+        left: 34%;
+        transform: rotate(211deg);
+    }
+
+    .lvl8to9 {
+        width: 28vw;
+        bottom: 26%;
+        left: 34%;
+        transform: rotate(99deg);
+    }
+
+    .lvl9to10 {
+        width: 32vw;
+        bottom: 17%;
+        left: 32%;
+        transform: rotate(203deg);
+    }
+
+    .lvl10to11 {
+        width: 32vw;
+        bottom: 7.5%;
+        left: 35%;
+        transform: rotate(95deg);
+    }
+
+    .lvl11to12 {
+        width: 29vw;
+        bottom: -1%;
+        left: 35%;
+        transform: rotate(207deg);
+    }
+
+    .lvl12tofinal {
+        display: none;
+    }
+
+
+}
+
+/*RESOLUCIÓN 450 EN MAPA*/
+
+@media (max-width: 450px) {
+    .bodyMenu {
+        background-image: url(./recursos/piuramapamobile.png);
+    }
+}
