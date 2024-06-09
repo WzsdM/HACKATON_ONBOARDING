@@ -62,7 +62,7 @@
         Juego Memoria
     </button>
 
-    <div class="modal fade" id="juego" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal fade" id="1" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
         <?php include("/xampp/htdocs/HACKATON_ONBOARDING/juego-memory/juego.php"); ?>
     </div>
 
@@ -71,7 +71,7 @@
         UTP QUIZ
     </button>
 
-    <div class="modal fade" id="quiz" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal fade" id="3" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
         <?php include("/xampp/htdocs/HACKATON_ONBOARDING/quiz-modal/quiz.php"); ?>
     </div>
 

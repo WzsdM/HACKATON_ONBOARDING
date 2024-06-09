@@ -1,31 +1,37 @@
-document.addEventListener('DOMContentLoaded', () => {
-    // Obtenemos el nivel del usuario desde el almacenamiento de sesión
+// Función para obtener el nivel del usuario almacenado en el sessionStorage
+function obtenerNivelUsuario() {
     const userData = sessionStorage.getItem('userData');
-    if (!userData) {
-        window.location.href = "../login.html"; // Redirigir a la página de inicio de sesión si no hay datos de usuario
-        return;
+    if (userData) {
+        const userDataObj = JSON.parse(userData);
+        return userDataObj.nivel;
     }
+    return null;
+}
 
-    const user = JSON.parse(userData);
-    const userLevel = user.puntaje;
+// Función para habilitar y deshabilitar los niveles según el nivel del usuario
+function controlarNiveles() {
+    // Obtener el nivel del usuario del sessionStorage
+    const nivelUsuario = obtenerNivelUsuario();
 
-    // Función para abrir el modal del nivel correspondiente
-    const openModal = (level) => {
-        const modalId = `modalLevel${level}`;
-        const modalElement = document.getElementById(modalId);
-        const modalInstance = new bootstrap.Modal(modalElement);
-        modalInstance.show();
-    };
+    // Deshabilitar todos los niveles
+    const niveles = document.querySelectorAll('.level');
+    niveles.forEach(function(nivel) {
+        nivel.style.pointerEvents = 'none';
+        nivel.style.opacity = '0.5';
+    });
 
-    // Asociamos eventos de clic a los niveles que el usuario puede acceder
-    for (let i = 1; i <= userLevel; i++) {
-        const levelElement = document.querySelector(`.level:nth-child(${i})`);
-        levelElement.addEventListener('click', () => {
-            openModal(i);
-        });
+    // Habilitar el nivel del usuario
+    if (nivelUsuario) {
+        const nivelUsuarioElemento = document.getElementById('level0' + nivelUsuario);
+        if (nivelUsuarioElemento) {
+            nivelUsuarioElemento.style.pointerEvents = 'auto';
+            nivelUsuarioElemento.style.opacity = '1';
+        }
     }
-});
+}
 
+// Llamar a la función para controlar los niveles cuando se cargue la página
+window.onload = controlarNiveles;
 document.addEventListener('DOMContentLoaded', function() {
     document.querySelector('.storeBtn').addEventListener('click', function() {
         window.location.href = '../tienda/tienda.php';
