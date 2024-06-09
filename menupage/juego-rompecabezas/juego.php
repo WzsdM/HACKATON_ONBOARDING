@@ -14,8 +14,8 @@
                 </div>
                 <div class="game-container w-50">
                     <div class="grid_rompecabezas" id="grid"></div>
-                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" id="congratulations">
-                        
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#coins" id="congratulations">
+                        <?php include("/xampp/htdocs/HACKATON_ONBOARDING/componentes/coins.php"); ?>
                     </button>
 
                 </div>

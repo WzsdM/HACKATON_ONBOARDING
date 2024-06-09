@@ -1,7 +1,7 @@
 // script.js
 document.addEventListener('DOMContentLoaded', () => {
     const grid = document.getElementById('grid');
-    const congratulationsDiv = document.getElementById('congratulations');
+    const congratulations = document.getElementById('congratulations');
 
     // Array con las posiciones correctas
     const correctOrder = [1, 2, 3, 4, 5, 6, 7, 8, 9];
@@ -84,6 +84,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
     function checkWin() {
         if (gameArray.join('') === correctOrder.join('')) {
-            congratulationsButton.click();}
+            congratulations.click();}
     }
 });
