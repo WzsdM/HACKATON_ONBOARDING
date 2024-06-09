@@ -1,5 +1,4 @@
 document.addEventListener('DOMContentLoaded', () => {
-    console.log("DOM fully loaded and parsed");
 
     const grid = document.querySelector('.grid_memory');
     const scoreDisplay = document.getElementById('score');
@@ -53,7 +52,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
             grid.appendChild(card);
         });
-        console.log("Board created with cards:", document.querySelectorAll('.card_memory'));
     }
 
     createBoard();
@@ -68,7 +66,6 @@ document.addEventListener('DOMContentLoaded', () => {
         if (this === firstCard) return;
 
         this.classList.add('flipped');
-        console.log("Card flipped:", this);
 
         if (!firstCard) {
             firstCard = this;
@@ -83,7 +80,7 @@ document.addEventListener('DOMContentLoaded', () => {
     function checkForMatch() {
         if (firstCard.dataset.item === secondCard.dataset.item) {
             disableCards();
-            updateScore();
+            // updateScore();
         } else {
             unflipCards();
         }
@@ -93,7 +90,6 @@ document.addEventListener('DOMContentLoaded', () => {
     function disableCards() {
         firstCard.removeEventListener('click', flipCard);
         secondCard.removeEventListener('click', flipCard);
-        console.log("Cards matched:", firstCard, secondCard);
 
         resetBoard();
     }
@@ -114,13 +110,12 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     // Actualizar la puntuación
-    function updateScore() {
-        score++;
-        scoreDisplay.innerText = `Puntuación: ${score}`;
-        console.log("Score updated:", score);
-    }
+    // function updateScore() {
+    //     score++;
+    //     scoreDisplay.innerText = `Puntuación: ${score}`;
+    //     console.log("Score updated:", score);
+    // }
 
     // Añadir event listener a las cartas
     document.querySelectorAll('.card_memory').forEach(card => card.addEventListener('click', flipCard));
-    console.log("Event listeners added to cards");
 });
