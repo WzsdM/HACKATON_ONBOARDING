@@ -5,40 +5,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cabecera Responsive Ejemplo</title>
-   
     <link rel="stylesheet" href="styless.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-IGG1f8xt2vhS0EcZXFIv0FwtCJkGP6m1fdHvDzKZvLT1zj+gbs6LTM1g1gjqva3F" crossorigin="anonymous"></script>
 </head>
 
 <body>
-    <div class="topBar">
-        <div class="topBar_left">
-            <div class="userImg">
-                <img src="../img/perfil.png" alt="User Profile" class="userProfile">
-            </div>
-            <div class="userName">
-                <div class="font-bold whitetext">Alumno,</div>
-                <div class="whitetext">Pyerina</div>
-            </div>
-        </div>
-        <div class="topBar_right">
-            <div class="coinsPurse rounded">
-                <div class="coinstext">
-                    2000
-                </div>
-                <div class="icon">
-                    <img src="../img/iconos/coin.png" alt="Coin Icon" class="coinIcon">
-                </div>
-            </div>
-            <div class="storeBtn rounded" href="../menupage/menu.php">
-                <div class="storetext">
-                    Inicio
-                </div>
-                <div class="icon">
-                    <img src="../img/iconos/inicio.svg" alt="Store Icon" class="storeIcon">
-                </div>
-            </div>
-        </div>
-    </div>
+<?php include '../menupage/topBar.php';?>
 
     <!--Texto en general -->
     <div class="info-box">
@@ -60,7 +32,6 @@
         <!-- Aquí se insertarán dinámicamente los productos -->
     </div>
     <!--Scrips de JS a utilizar-->
-    <script src="scripts.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script>
         $(document).ready(function() {

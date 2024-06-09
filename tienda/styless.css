@@ -4,6 +4,7 @@
     color: white;
     font-family: "Lato", sans-serif;
     font-weight: bold;
+    font-size: small;
 }
 
 html {
@@ -68,19 +69,25 @@ body {
 
 .userProfile {
     box-sizing: border-box;
-    border-radius: 1.5em;
+    border-radius: 2em;
     width: 4vw;
     height: auto;
     margin-right: 2vw;
+    -webkit-border-radius: 2em;
+    -moz-border-radius: 2em;
+    -ms-border-radius: 2em;
+    -o-border-radius: 2em;
 }
-
+.whitetext{
+    font-size: 16px !important;
+}
 .coinIcon {
     width: 2vw;
     height: auto;
 }
 
 .storeIcon {
-    width: 3vw;
+    width: 2vw;
     height: auto;
 }
 
@@ -142,15 +149,7 @@ body {
     padding-right: -100px;
     padding-left: 80px;
 }
-.left-info h2{
-    font-size: 32px;
-}
-.left-info p {
-    font-size: 18px;
-}
 .right-info h2{
-    font-family: "Inter", sans-serif;
-    font-size: 18px;
     padding-right: 18px;
    
 }
@@ -164,13 +163,15 @@ body {
 }
 .info-box .right-info .text-sede {
     text-align: center;
-    font-weight: bold;
-    font-size: 18px;
     background-color: #253038;
     color: white;
     width: 150px;
+    display: flex;
+    height: 30px;
     right: 55px;
-    border-radius: 20px; /* Agrega bordes redondos */
+    border-radius: 20px;
+    align-items: center;
+    justify-content: center;
 }
 
 .right-info select:focus {
@@ -207,8 +208,6 @@ body {
 }
 
 .product-info h2 {
-    font-family: "Inter", sans-serif;
-    font-weight: 100;
     width: 201px;
     height: 27px;
     font-size: 18px;
@@ -243,7 +242,6 @@ body {
     justify-content: center;
 }
 .price-btn .texto-btn{
-    font-weight: bold;
     font-size: 16px;
     width:45 ;
     height: 23;
@@ -358,10 +356,7 @@ body {
         padding-left: 15px;
        }
        .left-info h2{
-        font-size: 18px;
-       }
-       .left-info p{
-        font-size: 12px;
+        font-size: 20px !important;
        }
        .right-info .text-sede{
         width: 100px;
