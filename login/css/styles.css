@@ -1,0 +1,168 @@
+body {
+    font-family: 'Lato';
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    color: white;
+  
+}
+
+.form-group {
+    margin-bottom: 15px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+
+}
+
+.input-container {
+    position: relative;
+    width: 100%;
+    border: none; 
+}
+
+.input-container input {
+    width: 100%;
+    padding: 8px 30px 8px 8px; /* Adjusted padding to account for icon on the right */
+    box-sizing: border-box;
+    border: 1px solid #ccc; 
+    outline: none;
+}
+
+.input-container .icon {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 10px; /* Position the icon inside the input on the right */
+    cursor: pointer;
+    color: #b0b0b0; /* Set the color to a light gray */
+}
+.tenue { 
+    color : #828282;
+}
+.texto-blacno{
+    color: white;
+    font-weight: 400;
+}
+
+button {
+    padding: 10px 15px;
+    background-color: #D9D9D9;
+    border: none;
+    color: #1B2F3F ;
+    cursor: pointer;
+    border-radius: 10px;
+    width: 460px;
+}
+
+button:hover {
+    background-color: #b0b0b0;
+   
+}
+
+#message, #regMessage {
+    margin-top: 10px;
+}
+
+.logo {
+    width: 300px;
+}
+
+.contenedor-datos {
+    width: 60%;
+    margin: 0 auto;
+}
+
+/* Estilos para el div logo-bienvenida */
+#logo-bienvenida {
+   
+    display: flex; /* Activa el modelo de caja flexible */
+    justify-content: center; /* Centra horizontalmente los elementos */
+    align-items: center; /* Centra verticalmente los elementos */
+    height: 100vh; /* Establece la altura al 100% de la altura de la pantalla */
+    box-sizing: border-box; /* Incluye el padding y el borde en el ancho */
+    background-color: #2F3B44;
+   
+}
+
+#logo-bienvenida img {
+    
+    height: auto;
+    margin: 0 auto;
+}
+
+#logo-bienvenida {
+  
+    width: 50%; /* Establece el ancho al 50% */
+    height: 100vh; 
+    float: left; /* Flota el div a la izquierda */
+    box-sizing: border-box; /* Incluye el padding y el borde en el ancho */
+}
+
+/* Estilos para el div login */
+#login {
+    width: 50%; /* Establece el ancho al 50% */
+    float: right; /* Flota el div a la derecha */
+    box-sizing: border-box; /* Incluye el padding y el borde en el ancho */
+    height: 100vh; 
+    display: flex; /* Activa el modelo de caja flexible */
+    justify-content: center; /* Centra horizontalmente el contenido */
+    align-items: center; /* Centra verticalmente el contenido */
+
+   background-color: #28343c;
+}
+#usuario, #password {
+    border-radius: 10px;
+    width: 460px;
+}
+
+@media screen and (max-width: 990px) {
+    #logo-bienvenida {
+        display: none; /* Oculta el div logo-bienvenida */
+    }
+
+    #login {
+        width: 100%; /* Establece el ancho del div login al 100% */
+    }
+}
+
+.info-text {
+    display: flex;
+    align-items: center;
+    font-size: 12px;
+    color: #6c757d; /* Light gray color */
+    margin-top: 5px;
+}
+
+.info-text .fas {
+    margin-right: 5px;
+}
+
+#forgot-password {
+    display: flex;
+    justify-content: flex-end;
+   
+}
+
+#forgot-password a {
+    margin: 10px; /* Margen derecho de 10px */
+    float: right; /* Alineación a la derecha */
+}
+
+#login a {
+    color: white; /* Color blanco */
+    font-size: 12px; /* Tamaño de letra pequeño */
+    float: right; /* Ubicación a la derecha */
+    margin-top: 10px; /* Espacio superior */
+    text-decoration: none; /* Quitar subrayado */
+}
+
+#login a:hover {
+    text-decoration: underline; /* Subrayado al pasar el ratón */
+}

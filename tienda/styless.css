@@ -1,0 +1,301 @@
+body {
+    margin: 0;
+    font-family: bold, sans-serif;
+    background-color: #2F3B44;
+}
+
+/*Estilos de la cabecera, puede ser reemplazada*/
+header {
+    background-color: #253038;
+    color: white;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo-img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.logo-text {
+    font-size: 1rem;
+    font-weight: bold;
+    line-height: 1.2; /* Ajusta la altura de la línea para un mejor espaciado */
+}
+
+nav {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+  
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    text-align: center;
+    background-color: #2F3B44;
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Centra el contenido vertical y horizontalmente */
+    border-radius: 20px; /* Agrega bordes redondos */
+    overflow: hidden; /* Asegura que las imágenes sigan el borde redondo */
+}
+
+nav a:hover {
+    background-color: #555;
+    border-radius: 5px;
+    
+}
+.nav-icon {
+    width: 15px;
+    height: 15px;
+    margin-left: 5px;
+
+}
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.menu-toggle span {
+    height: 2px;
+    width: 25px;
+    background-color: white;
+    margin: 4px 0;
+}
+/*Fin estilos de cabecera*/
+/*Estilos del texto*/
+.info-box {
+    display: flex;
+    
+    flex-wrap: wrap; /* Permite que los elementos se envuelvan cuando el espacio es limitado */
+    color: white;
+}
+
+.left-info,
+.right-info {
+    padding: 20px;
+    align-items: center;
+}
+
+.left-info{
+    padding-right: -100px;
+    padding-left: 80px;
+}
+.left-info h2{
+    font-size: 32px;
+}
+.left-info p {
+    font-size: 18px;
+}
+.right-info h2{
+    font-family: "Inter", sans-serif;
+    font-size: 18px;
+    padding-right: 18px;
+   
+}
+.right-info{
+    display: flex;
+    
+}
+
+.left-info {
+    margin-right: 400px; /* Elimina el margen derecho en dispositivos pequeños */
+}
+.right-info .text-sede {
+    text-align: center;
+    font-weight: bold;
+    border-radius: 5px;
+    font-size: 18px;
+    background-color: #253038;
+    color: white;
+    width: 150px;
+    right: 55px;
+    border-radius: 20px; /* Agrega bordes redondos */
+}
+
+.right-info select:focus {
+    outline: none; /* Elimina el borde de enfoque */
+}
+/*Fin estilos del texto*/
+
+/*Estilos del producto*/
+.products-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 60px;
+    justify-content: center; /* Centra los productos horizontalmente */
+   
+}
+
+.product {
+    padding: 10px;
+    width:201px;
+    height: 303px;
+
+    padding: fixed;
+    align-items: center;
+}
+
+.product .img-producto {
+    width: 201px;
+    height: 200px;
+
+}
+
+.product-info h2 {
+   text-align: center;
+}
+
+.product-info h2 {
+    font-family: "Inter", sans-serif;
+    font-weight: 100;
+    width: 201px;
+    height: 27px;
+    font-size: 18px;
+    line-height: 150%;
+    color: white;
+    margin-bottom: 14px;
+}
+.product .price-agotado{
+    background-color: #1B2F3F;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: flex;
+    font-size: 16px;
+    border-radius: 5px;
+}
+.price-btn {
+    display: flex;
+    width: 210px;
+    align-items: center;
+    height: 48px;
+    background-color: #1B2F3F;
+    border: none;
+    color: white;
+    padding: 10px 49px;
+    text-decoration: none;   
+    border-radius: 20px;
+    cursor: pointer;
+    transition-duration: 0.4s;
+    justify-content: center;
+}
+.price-btn .texto-btn{
+    font-weight: bold;
+    font-size: 16px;
+    width:45 ;
+    height: 23;
+    font-size: 16;
+    line-height: 150%;
+    padding-left: 20px;
+}
+.price-btn .btn-icon{
+    width: 25px;
+    height: 25px;
+    margin-left: 5px;
+
+}
+
+.price-btn:hover {
+    background-color: #D9D9D9;
+}
+/*Fin estilos del producto*/
+
+
+
+/*Estilos del responsive*/
+/*Estilos responsive del header*/
+@media (max-width: 360px) {
+    nav {
+        flex-direction: column;
+        width: 100%;
+        display: none;
+    }
+
+    nav a {
+        text-align: center;
+        padding: 1rem;
+        width: 100%;
+    }
+
+    .menu-toggle {
+        display: flex;
+    }
+
+    nav.active {
+        display: flex;
+    }
+} 
+/*Fin esitlos responsive del header*/
+    
+/* Estilos responsive de la informacion */
+@media (max-width: 360px) {
+      .left-info,
+      .right-info {
+          flex-basis: 100%; /* Cambia el tamaño de las cajas a 100% del ancho disponible */
+          margin-right: 0; /* Elimina el margen derecho en dispositivos pequeños */
+        }
+        .right-info h2 {
+            font-size: 18px;
+        }
+}
+    /*FIn estilos responsive de informacion*/
+
+/* Estilos responsive de los productos */
+@media (max-width: 360px) {
+    /* Estilos para hacerlo responsive */
+    .products-container {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+    }   
+    .product{
+        width: 120px;
+        height: 210px;
+        
+    }
+    .price-btn {
+        width:  120px; /* Ajusta el ancho del botón al 100% del contenedor del producto */
+        margin-top: -10px;
+        height: 40px;
+        border-radius: 20;
+    }
+    .product-info h2{
+       width: 120px;
+
+       font-size: 12px;
+    }
+    .product .img-producto {
+        width: 120px;
+        height: 120px;
+
+    }
+
+    .product-info {
+        width: 120px;
+
+    }
+
+}
+
+
+/*Fin estilos responsive productos*/
+
+
