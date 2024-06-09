@@ -14,7 +14,7 @@
     </div>
     <div id="login">
         <div class="contenedor-datos">
-            <img class="logo" src="./img/logo-UTP+play.png" alt="">
+            <img class="logo" src="./img/logo-UTP+play.svg" alt="">
             <h2>Empieza tu nueva aventura en UTP</h2>
 
             <p class="tenue">Diviértete mientras aprendes</p>
