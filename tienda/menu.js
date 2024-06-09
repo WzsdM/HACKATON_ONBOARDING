@@ -10,16 +10,16 @@ document.addEventListener('DOMContentLoaded', function() {
                 </div>
         `;
     $storeBtn.addEventListener('click', function() {
-        if($storeBtn.classList.contains("isOnStore")){
-            $storeBtn.innerText="Inicio";
-        $storeBtn.innerHTML="Inicio";
-        $storeBtn.classList.toggle("isOnStore");
-        window.location.href = '../tienda/tienda.php';
-        }else{
-            $storeBtn.innerText="Tienda";
-        $storeBtn.innerHtml="Tienda";
         window.location.href = '../menupage/menu.php';
-        }
-        
+        const Data=JSON.parse(sessionStorage.getItem('userData'));
+    $coins=document.querySelector('.coinstext');
+    var monedero= Data["monedas"];
+    $coins.innerHTML=monedero;
     });
-})
+
+    const Data=JSON.parse(sessionStorage.getItem('userData'));
+    $coins=document.querySelector('.coinstext');
+    var monedero= Data["monedas"];
+    $coins.innerHTML=monedero;
+    
+});

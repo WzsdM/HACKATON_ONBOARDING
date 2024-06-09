@@ -1,3 +1,11 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
 <div class="topBar">
         <div class="topBar_left">
             <div class="userImg">
@@ -11,7 +19,7 @@
         <div class="topBar_right">
             <div class="coinsPurse rounded">
                 <div class="coinstext">
-                    2000
+                    0
                 </div>
                 <div class="icon">
                     <img src="../img/iconos/coin.png" alt="Coin Icon" class="coinIcon">
@@ -29,3 +37,5 @@
     </div>
 </div>
 <script src="menu.js"></script>
+</body>
+</html>
