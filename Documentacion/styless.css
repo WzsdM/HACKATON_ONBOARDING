@@ -20,8 +20,8 @@ body, html {
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
+    z-index: 999;
 }
-
 .right-section {
     background-color: #e0e0e0;
     flex: 1 1 70%;
@@ -63,6 +63,7 @@ body, html {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     width: 100%;
     max-width: 600px;
+    z-index: 999;
 }
 
 @media (max-width: 425px) {
@@ -70,3 +71,27 @@ body, html {
         flex: 1 1 100%;
     }
 }
+
+/*MENU PRINCIPAL*/
+
+.recursosMenu{
+    display: flex;
+    justify-content: space-around;
+}
+.imgmenu{
+    height: 200px;
+}
+/* END MENU PRINCIPAL*/
+
+/*PARTICLES*/
+
+#particles-js{
+    width: auto;
+    height: 100%;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    z-index: 1;
+}
+
+/*END PARTICLES*/
