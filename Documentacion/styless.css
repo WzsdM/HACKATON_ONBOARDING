@@ -22,6 +22,23 @@ body, html {
     align-items: center;
     z-index: 999;
 }
+.titleSideBar{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.titleSideBar h2{
+    margin-top: 0.3em;
+    margin-bottom: 0.3em;
+}
+.titleSideBar h3{
+    margin-top: 0.3em;
+    margin-bottom: 0.3em;
+}
+.titleSideBar h4{
+    margin-top: 0.3em;
+    margin-bottom: 0.3em;
+}
 .right-section {
     background-color: #e0e0e0;
     flex: 1 1 70%;
