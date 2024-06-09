@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
 
 body{
-    font-family: 'Inter', consolas;
+    font-family: "Lato", sans-serif;
 }
 
 #content_info{
@@ -45,4 +45,28 @@ body{
 
 .canje{
     background-color: #1B2F3F;
+}
+
+.dropdown-menu{
+    --bs-dropdown-padding-x: 64px !important;
+    --bs-dropdown-padding-y: 38px !important;
+}
+
+.dropdown-menu-dark {
+    --bs-dropdown-bg: #2F3B44 !important;
+}
+
+li {
+    display: flex;
+    gap: 48px;
+
+    .icon img {
+        width: 24px; /* Ajusta el tamaño del ícono */
+        height: 24px;
+    }
+
+    p{
+        font-family: "Lato", sans-serif;
+        font-size: 18px;
+    }
 }
