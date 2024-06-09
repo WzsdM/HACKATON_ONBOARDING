@@ -1,4 +1,4 @@
-/* styles.css */
+/* styles.css memory */
 
 #game{
     background-color: #2F3B44;
@@ -22,13 +22,13 @@
     font-size: 24px;
 }
 
-.grid {
+.grid_memory {
     display: grid;
     grid-template-columns: repeat(4, 100px);
     grid-gap: 10px;
 }
 
-.card {
+.card_memory {
     width: 100px;
     height: 100px;
     perspective: 1000px;
@@ -45,7 +45,7 @@
     cursor: pointer;
 }
 
-.card.flipped .card-inner {
+.card_memory.flipped .card-inner {
     transform: rotateY(180deg);
 }
 

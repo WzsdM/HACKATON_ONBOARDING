@@ -7,7 +7,8 @@
             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"><i class="ai-cross"></i></button>
         </div>
         <div class="game-container">
-            <div class="grid"></div>
+            <div class="grid_memory" ></div>
         </div>
     </div>
 </div>
+    

@@ -65,6 +65,15 @@
     <div class="modal fade" id="juego" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
         <?php include("/xampp/htdocs/HACKATON_ONBOARDING/juego-memory/juego.php"); ?>
     </div>
+
+    <!-- JUEGO - ROMPECABEZAS -->
+    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#juegoR">
+        Juego Rompecabezas
+    </button>
+
+    <div class="modal fade" id="juegoR" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <?php include("/xampp/htdocs/HACKATON_ONBOARDING/juego-rompecabezas/juego.php"); ?>
+    </div>
 </body>
 
 </html>

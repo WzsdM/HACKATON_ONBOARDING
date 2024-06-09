@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', () => {
     console.log("DOM fully loaded and parsed");
 
-    const grid = document.querySelector('.grid');
+    const grid = document.querySelector('.grid_memory');
     const scoreDisplay = document.getElementById('score');
     let score = 0;
 
@@ -32,7 +32,7 @@ document.addEventListener('DOMContentLoaded', () => {
         shuffle(gameArray);
         gameArray.forEach(item => {
             const card = document.createElement('div');
-            card.classList.add('card');
+            card.classList.add('card_memory');
             card.dataset.item = item;
 
             const cardInner = document.createElement('div');
@@ -53,7 +53,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
             grid.appendChild(card);
         });
-        console.log("Board created with cards:", document.querySelectorAll('.card'));
+        console.log("Board created with cards:", document.querySelectorAll('.card_memory'));
     }
 
     createBoard();
@@ -121,6 +121,6 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     // Añadir event listener a las cartas
-    document.querySelectorAll('.card').forEach(card => card.addEventListener('click', flipCard));
+    document.querySelectorAll('.card_memory').forEach(card => card.addEventListener('click', flipCard));
     console.log("Event listeners added to cards");
 });
