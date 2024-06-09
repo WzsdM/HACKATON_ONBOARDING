@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="menu.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <script src="https://unpkg.com/akar-icons-fonts"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
 </head>
@@ -54,12 +56,7 @@
 
     <div class="levelsDispos">
         <div class="section0">
-            <div type="button" data-bs-toggle="modal" data-bs-target="#1" class="level01 levelgame level completelevel">
-
-            </div>
-            <div class="modal fade" id="1" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-                <?php include("/xampp/htdocs/HACKATON_ONBOARDING/MODALS/juego-memory/juego.php"); ?>
-            </div>
+            <div class="level01 levelgame level completelevel" type="button" data-bs-toggle="modal" data-bs-target="#level1"></div>
             <img src="./recursos/curve.png" class="curve lvl1to2 completecurve" />
             <div class="level02 levelavion level">
 
@@ -116,6 +113,11 @@
         </div>
     </div>
     <div class="bodyMenu">
+    </div>
+
+
+    <div class="modal fade" id="level1" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <?php include("/xampp/htdocs/HACKATON_ONBOARDING/menupage/juego-memory/juego.php"); ?>
     </div>
 
     <script src="menu.js"></script>

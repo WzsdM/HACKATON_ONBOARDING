@@ -7,14 +7,14 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Array con las rutas de las imágenes
     const elements = [
-        '/HACKATON_ONBOARDING/juego-memory/img/1.png', 
-        '/HACKATON_ONBOARDING/juego-memory/img/2.png', 
-        '/HACKATON_ONBOARDING/juego-memory/img/3.png',
-        '/HACKATON_ONBOARDING/juego-memory/img/4.png',
-        '/HACKATON_ONBOARDING/juego-memory/img/5.png',
-        '/HACKATON_ONBOARDING/juego-memory/img/6.png',
-        '/HACKATON_ONBOARDING/juego-memory/img/7.png',
-        '/HACKATON_ONBOARDING/juego-memory/img/8.png',
+        '/HACKATON_ONBOARDING/menupage/juego-memory/img/1.png', 
+        '/HACKATON_ONBOARDING/menupage/juego-memory/img/2.png', 
+        '/HACKATON_ONBOARDING/menupage/juego-memory/img/3.png',
+        '/HACKATON_ONBOARDING/menupage/juego-memory/img/4.png',
+        '/HACKATON_ONBOARDING/menupage/juego-memory/img/5.png',
+        '/HACKATON_ONBOARDING/menupage/juego-memory/img/6.png',
+        '/HACKATON_ONBOARDING/menupage/juego-memory/img/7.png',
+        '/HACKATON_ONBOARDING/menupage/juego-memory/img/8.png',
     ];
     let gameArray = [...elements, ...elements];
 

@@ -1,5 +1,5 @@
-<script src="/HACKATON_ONBOARDING/juego-memory/app.js"></script>
-<link rel="stylesheet" href="/HACKATON_ONBOARDING/juego-memory/styles.css">
+<script src="../menupage/juego-memory/app.js"></script>
+<link rel="stylesheet" href="../menupage/juego-memory/styles.css">
 <div class="modal-dialog  modal-dialog-centered">
     <div class="modal-content  w-auto" id="game">
         <div class="modal-juego d-flex w-100 align-items-center mb-3">
