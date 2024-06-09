@@ -1,5 +1,5 @@
-<script src="/HACKATON_ONBOARDING/juego-rompecabezas/app.js"></script>
-<link rel="stylesheet" href="/HACKATON_ONBOARDING/juego-rompecabezas/styles.css">
+<script src="/HACKATON_ONBOARDING/MODALES/juego-rompecabezas/app.js"></script>
+<link rel="stylesheet" href="/HACKATON_ONBOARDING/MODALES/juego-rompecabezas/styles.css">
 <div class="modal-dialog  modal-dialog-centered">
     <div class="modal-content  w-auto" id="game">
         <div class="modal-juego d-flex w-100 align-items-center mb-3">

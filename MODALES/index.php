@@ -8,7 +8,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/akar-icons-fonts"></script>
-    <link rel="stylesheet" href="./css/style_modals.css">
+    <link rel="stylesheet" href="/HACKATON_ONBOARDING/MODALES/css/style_modals.css">
 </head>
 
 <body>
@@ -18,7 +18,7 @@
     </button>
 
     <div class="modal fade" id="coins" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <?php include("/xampp/htdocs/HACKATON_ONBOARDING/coins-modal/coins.php"); ?>
+        <?php include("/xampp/htdocs/HACKATON_ONBOARDING/MODALES/coins-modal/coins.php"); ?>
     </div>
 
     <!-- CANJEO COINS -->
@@ -27,7 +27,7 @@
     </button>
 
     <div class="modal fade" id="information" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <?php include("/xampp/htdocs/HACKATON_ONBOARDING/information-modal/information.php"); ?>
+        <?php include("/xampp/htdocs/HACKATON_ONBOARDING/MODALES/information-modal/information.php"); ?>
     </div>
 
     <!-- AVISO - TIENDA -->
@@ -36,7 +36,7 @@
     </button>
 
     <div class="modal fade" id="aviso" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <?php include("/xampp/htdocs/HACKATON_ONBOARDING/aviso-modal/aviso.php"); ?>
+        <?php include("/xampp/htdocs/HACKATON_ONBOARDING/MODALES/aviso-modal/aviso.php"); ?>
     </div>
 
     <!-- POPOVER - CANJEAR -->
@@ -45,7 +45,7 @@
     </button>
 
     <div class="modal fade" id="canjear" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <?php include("/xampp/htdocs/HACKATON_ONBOARDING/popover-canje/canjear.php"); ?>
+        <?php include("/xampp/htdocs/HACKATON_ONBOARDING/MODALES/popover-canje/canjear.php"); ?>
     </div>
 
     <!-- POPOVER - CANCEL -->
@@ -54,7 +54,7 @@
     </button>
 
     <div class="modal fade" id="cancel" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <?php include("/xampp/htdocs/HACKATON_ONBOARDING/popover-cancel/cerrar.php"); ?>
+        <?php include("/xampp/htdocs/HACKATON_ONBOARDING/MODALES/popover-cancel/cerrar.php"); ?>
     </div>
 
     <!-- JUEGO - MEMORIA -->
@@ -63,7 +63,7 @@
     </button>
 
     <div class="modal fade" id="juego" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-        <?php include("/xampp/htdocs/HACKATON_ONBOARDING/juego-memory/juego.php"); ?>
+        <?php include("/xampp/htdocs/HACKATON_ONBOARDING/MODALES/juego-memory/juego.php"); ?>
     </div>
 
     <!-- JUEGO - ROMPECABEZAS -->
@@ -72,7 +72,7 @@
     </button>
 
     <div class="modal fade" id="juegoR" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-        <?php include("/xampp/htdocs/HACKATON_ONBOARDING/juego-rompecabezas/juego.php"); ?>
+        <?php include("/xampp/htdocs/HACKATON_ONBOARDING/MODALES/juego-rompecabezas/juego.php"); ?>
     </div>
 </body>
 
