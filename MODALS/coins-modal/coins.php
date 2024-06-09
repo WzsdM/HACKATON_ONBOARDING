@@ -1,4 +1,3 @@
-<link rel="stylesheet" href="./information-modal/information.css">
 <div class="modal-dialog modal-dialog-centered">
   <div class="modal-content" id="content_info">
     <div class="title">

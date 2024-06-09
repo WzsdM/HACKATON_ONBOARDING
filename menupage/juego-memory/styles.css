@@ -8,13 +8,13 @@
     padding: 50px;
     border-radius: 20px;
     position: relative;
- 
-  flex-direction: column;
+    flex-direction: column;
 }
 .game-container {
     display: flex;
     flex-direction: column;
     align-items: center;
+    height: 460px;
 }
 
 #score {
@@ -32,6 +32,7 @@
     width: 100px;
     height: 100px;
     perspective: 1000px;
+    border: none;
 }
 
 .card-inner {
@@ -56,7 +57,7 @@
 }
 
 .card-front {
-    background-color: #D1062E;
+    background-color: #3c5061;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -77,6 +78,9 @@
     color: #fff;
     opacity: 100%;
     font-size: 20px;
+}
+.descripcion p{
+    padding-right: 100px;
 }
 
 
