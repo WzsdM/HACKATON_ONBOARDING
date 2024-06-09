@@ -81,15 +81,20 @@ nav a:hover {
 /*Estilos del texto*/
 .info-box {
     display: flex;
+    
     flex-wrap: wrap; /* Permite que los elementos se envuelvan cuando el espacio es limitado */
     color: white;
 }
 
 .left-info,
 .right-info {
-    flex: 1; /* Ocupa el espacio disponible */
     padding: 20px;
     align-items: center;
+}
+
+.left-info{
+    padding-right: -100px;
+    padding-left: 80px;
 }
 .left-info h2{
     font-size: 32px;
