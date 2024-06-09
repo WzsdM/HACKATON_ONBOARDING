@@ -1,88 +1,134 @@
-body {
+* {
     margin: 0;
-    font-family: bold, sans-serif;
-    background-color: #2F3B44;
+    padding: 0;
+    color: white;
+    font-family: "Lato", sans-serif;
+    font-weight: bold;
 }
 
+html {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    background-color: #2F3B44;
+}
 /*Estilos de la cabecera, puede ser reemplazada*/
-header {
+.topBar {
+    position: relative;
     background-color: #253038;
-    color: white;
-    padding: 1rem;
+    width: 100vw;
+    height: 15vh;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    flex-wrap: wrap;
-    
+    box-sizing: border-box;
+    padding-left: 5vw;
+    padding-right: 5vw;
+    z-index: 4;
 }
 
-.logo-container {
-    display: flex;
-    align-items: center;
-}
-
-.logo-img {
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    margin-right: 10px;
-}
-
-.logo-text {
-    font-size: 1rem;
-    font-weight: bold;
-    line-height: 1.2; /* Ajusta la altura de la línea para un mejor espaciado */
-}
-
-nav {
-    display: flex;
-    gap: 1rem;
-    align-items: center;
-  
-}
-
-nav a {
-    color: white;
-    text-decoration: none;
-    padding: 0.5rem 1rem;
-    text-align: center;
+.bodyMenu {
+    position: absolute;
     background-color: #2F3B44;
+    background-image: url("./recursos/piuramapa.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100vw;
+    height: 85vh;
+    top: 15%;
+    left: 0%;
+}
+
+.levelsDispos {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    z-index: 2;
+    top: -2%;
     display: flex;
-    align-items: center;
-    justify-content: center; /* Centra el contenido vertical y horizontalmente */
-    border-radius: 20px; /* Agrega bordes redondos */
-    overflow: hidden; /* Asegura que las imágenes sigan el borde redondo */
-}
-
-nav a:hover {
-    background-color: #555;
-    border-radius: 5px;
-    
-}
-.nav-icon {
-    width: 15px;
-    height: 15px;
-    margin-left: 5px;
-
-}
-.menu-toggle {
-    display: none;
     flex-direction: column;
+    align-items: center;
+}
+
+.topBar_left {
+    display: flex;
+    width: 12vw;
+    height: 60%;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.userProfile {
+    box-sizing: border-box;
+    border-radius: 1.5em;
+    width: 4vw;
+    height: auto;
+    margin-right: 2vw;
+}
+
+.coinIcon {
+    width: 2vw;
+    height: auto;
+}
+
+.storeIcon {
+    width: 3vw;
+    height: auto;
+}
+
+.topBar_right {
+    display: flex;
+    width: 24vw;
+    height: 60%;
+    justify-content: space-around;
+}
+
+.rounded {
+    background: #2F3B44;
+    box-sizing: border-box;
+    border-radius: 1em;
+    -webkit-border-radius: 1em;
+    -moz-border-radius: 1em;
+    -ms-border-radius: 1em;
+    -o-border-radius: 1em;
+    align-self: center;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.coinsPurse {
+    width: 8vw;
+    height: 80%;
+}
+
+.storeBtn {
+    width: 10vw;
+    height: 80%;
+}
+.storeBtn:hover{
     cursor: pointer;
 }
 
-.menu-toggle span {
-    height: 2px;
-    width: 25px;
-    background-color: white;
-    margin: 4px 0;
+.level {
+    width: 12vw;
+    height: 18vh;
+    position: absolute;
 }
+
 /*Fin estilos de cabecera*/
 /*Estilos del texto*/
 .info-box {
     display: flex;
-    
-    flex-wrap: wrap; /* Permite que los elementos se envuelvan cuando el espacio es limitado */
+ 
     color: white;
 }
 
@@ -116,10 +162,9 @@ nav a:hover {
 .left-info {
     margin-right: 400px; /* Elimina el margen derecho en dispositivos pequeños */
 }
-.right-info .text-sede {
+.info-box .right-info .text-sede {
     text-align: center;
     font-weight: bold;
-    border-radius: 5px;
     font-size: 18px;
     background-color: #253038;
     color: white;
@@ -219,34 +264,88 @@ nav a:hover {
 /*Fin estilos del producto*/
 
 
+/*MOBILE TECHNIQUE FOR YOU MY LOVE*/
 
-/*Estilos del responsive*/
-/*Estilos responsive del header*/
-@media (max-width: 360px) {
-    nav {
+@media (max-width: 600px) {
+    body {
+        width: 100%;
+        height: 100%;
+        overflow-x: scroll;
+        overflow-y: scroll;
+    }
+
+    .userProfile {
+        box-sizing: border-box;
+        border-radius: 1.5em;
+        width: 8vw;
+        height: auto;
+        margin-right: 2vw;
+    }
+
+    .topBar_right {
+        display: flex;
+        width: 24vw;
+        height: 60%;
+        font-size: 0.7em;
+        justify-content: space-around;
         flex-direction: column;
-        width: 100%;
-        display: none;
     }
 
-    nav a {
-        text-align: center;
-        padding: 1rem;
-        width: 100%;
+    .coinsPurse {
+        width: 80%;
+        height: 40%;
+        justify-content: space-around;
+        box-sizing: border-box;
+        padding-left: 15%;
+        padding-right: 15%;
     }
 
-    .menu-toggle {
+    .coinIcon {
+        width: 3.3vw;
+    }
+
+    .storeBtn {
+        width: 80%;
+        height: 40%;
+    }
+
+    .rounded {
+        background: #2F3B44;
+        box-sizing: border-box;
+        border-radius: 2em;
+        -webkit-border-radius: 2em;
+        -moz-border-radius: 2em;
+        -ms-border-radius: 2em;
+        -o-border-radius: 2em;
+        align-self: center;
         display: flex;
+        justify-content: space-evenly;
+        align-items: center;
     }
 
-    nav.active {
+    .topBar {
+        background-color: #253038;
+        width: 100vw;
+        height: 15vh;
         display: flex;
+        justify-content: space-between;
+        align-items: center;
+        box-sizing: border-box;
+        padding-left: 10vw;
+        padding-right: 10vw;
+
+        top: 0%;
+        left: 0%;
+        z-index: 4;
     }
-} 
+}
 /*Fin esitlos responsive del header*/
     
 /* Estilos responsive de la informacion */
 @media (max-width: 360px) {
+    .info-box{
+        flex-wrap: wrap; /* Permite que los elementos se envuelvan cuando el espacio es limitado */
+    }
       .left-info,
       .right-info {
           flex-basis: 100%; /* Cambia el tamaño de las cajas a 100% del ancho disponible */
@@ -255,6 +354,22 @@ nav a:hover {
         .right-info h2 {
             font-size: 18px;
         }
+       .left-info{
+        padding-left: 15px;
+       }
+       .left-info h2{
+        font-size: 18px;
+       }
+       .left-info p{
+        font-size: 12px;
+       }
+       .right-info .text-sede{
+        width: 100px;
+        height: 32px;
+        border-radius: 20;
+        align-content: center;
+       }
+
 }
     /*FIn estilos responsive de informacion*/
 

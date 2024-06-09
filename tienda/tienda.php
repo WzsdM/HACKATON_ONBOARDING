@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cabecera Responsive Ejemplo</title>
-    <link rel="stylesheet" href="../menupage/menu.css">
+   
     <link rel="stylesheet" href="styless.css">
 </head>
 
@@ -29,12 +29,12 @@
                     <img src="../img/iconos/coin.png" alt="Coin Icon" class="coinIcon">
                 </div>
             </div>
-            <div class="storeBtn rounded" href="../tienda/tienda.php">
+            <div class="storeBtn rounded" href="../menupage/menu.php">
                 <div class="storetext">
-                    Tienda
+                    Inicio
                 </div>
                 <div class="icon">
-                    <img src="../img/iconos/tienda.png" alt="Store Icon" class="storeIcon">
+                    <img src="../img/iconos/inicio.svg" alt="Store Icon" class="storeIcon">
                 </div>
             </div>
         </div>
@@ -60,7 +60,7 @@
         <!-- Aquí se insertarán dinámicamente los productos -->
     </div>
     <!--Scrips de JS a utilizar-->
-
+    <script src="scripts.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script>
         $(document).ready(function() {
@@ -90,7 +90,7 @@
             });
         });
     </script>
-    <script src="scripts.js"></script>
+  
 </body>
 
 </html>
