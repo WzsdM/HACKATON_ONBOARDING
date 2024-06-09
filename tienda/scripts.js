@@ -22,3 +22,10 @@ window.addEventListener('click', function(event) {
         }
     }
 });
+
+
+document.addEventListener('DOMContentLoaded', function() {
+    document.querySelector('.storeBtn').addEventListener('click', function() {
+        window.location.href = '../menupage/menu.php';
+    });
+})
