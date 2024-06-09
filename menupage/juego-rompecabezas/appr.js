@@ -1,7 +1,11 @@
 // script.js
 document.addEventListener('DOMContentLoaded', () => {
     const grid = document.getElementById('grid');
-    const congratulations = document.getElementById('congratulations');
+    const coinsModalElement = document.getElementById('coins');
+    const gameModalElement = document.getElementById('level4');
+
+    const coinsModal = new bootstrap.Modal(coinsModalElement);
+    const gameModal = new bootstrap.Modal(gameModalElement);
 
     // Array con las posiciones correctas
     const correctOrder = [1, 2, 3, 4, 5, 6, 7, 8, 9];
@@ -24,10 +28,10 @@ document.addEventListener('DOMContentLoaded', () => {
             card.classList.add('card_rompecabezas');
             card.draggable = true;
             card.dataset.item = item;
-            
+
             const img = document.createElement('img');
             img.src = `/HACKATON_ONBOARDING/menupage/juego-rompecabezas/img/img${item}.jpg`; // Ruta de la imagen
-            
+
             card.appendChild(img);
             grid.appendChild(card);
         });
@@ -84,6 +88,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
     function checkWin() {
         if (gameArray.join('') === correctOrder.join('')) {
-            congratulations.click();}
+            gameModal.hide();
+            coinsModal.show();
+        }
     }
 });
