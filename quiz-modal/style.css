@@ -27,7 +27,7 @@
     padding: 10px 30px 10px 30px;
     outline: none;
     border: none;
-    border-radius: 5px;
+    border-radius: 100px;
     color: #fff;
     cursor: pointer;
 }
@@ -36,7 +36,7 @@
     width: 540px;
     color: #fff;
     background: #1B2F3F;
-    border-radius: 5px;
+    border-radius: 20px;
     transform: translate(-50%, -50%) scale(0.9);
     opacity: 0;
     pointer-events: none;
@@ -87,14 +87,14 @@
     cursor: pointer;
     border: none;
     outline: none;
-    border-radius: 5px;
-    border: 1px solid #007bff;
+    border-radius: 100px;
+    border: 1px solid #4a5b67;
     transition: all 0.3s ease;
 }
 
 .quiz_box{
     width: 550px;
-    background: #fff;
+    background: #1B2F3F;
     border-radius: 5px;
     transform: translate(-50%, -50%) scale(0.9);
     opacity: 0;
@@ -107,7 +107,8 @@
     z-index: 2;
     height: 70px;
     padding: 0 30px;
-    background: #fff;
+    background: #1B2F3F;
+    color: #fff;
     border-radius: 5px 5px 0 0;
     display: flex;
     align-items: center;
@@ -163,12 +164,13 @@
 
 section{
     padding: 25px 30px 20px 30px;
-    background: #fff;
+    background: #1B2F3F;
 }
 
 section .que_text{
     font-size: 25px;
     font-weight: 600;
+    color: #fff;
 }
 
 section .option_list{
@@ -251,6 +253,7 @@ footer{
 footer .total_que span{
     display: flex;
     user-select: none;
+    color: #fff;
 }
 
 footer .total_que span p{
@@ -292,7 +295,7 @@ footer button.show{
 }
 
 .result_box{
-    background: #fff;
+    background: #1B2F3F;
     border-radius: 5px;
     display: flex;
     padding: 25px 30px;
@@ -315,6 +318,7 @@ footer button.show{
 .result_box .complete_text{
     font-size: 20px;
     font-weight: 500;
+    color: #fff;
 }
 
 .result_box .score_text span{
@@ -322,6 +326,7 @@ footer button.show{
     margin: 10px 0;
     font-size: 18px;
     font-weight: 500;
+    color: #fff;
 }
 
 .result_box .score_text span p{
@@ -336,33 +341,33 @@ footer button.show{
 
 .result_box .buttons button{
     margin: 0 10px;
-    height: 45px;
+    height: 60px;
     padding: 0 20px;
+    border-radius: 100px;
     font-size: 18px;
     font-weight: 500;
     cursor: pointer;
     border: none;
     outline: none;
-    border-radius: 5px;
-    border: 1px solid #007bff;
+    border: 1px solid #2F3B44;
     transition: all 0.3s ease;
 }
 
 .buttons button.restart{
     color: #fff;
-    background: #007bff;
+    background: #2F3B44;
 }
 
 .buttons button.restart:hover{
-    background: #0263ca;
+    background: #4a5b67;
 }
 
 .buttons button.quit{
-    color: #007bff;
-    background: #fff;
+    color: #fff;
+    background: #2F3B44;
 }
 
 .buttons button.quit:hover{
     color: #fff;
-    background: #007bff;
+    background: #4a5b67;
 }
