@@ -84,9 +84,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
     function checkWin() {
         if (gameArray.join('') === correctOrder.join('')) {
-            congratulationsDiv.style.display = 'block';
-        } else {
-            congratulationsDiv.style.display = 'none';
-        }
+            congratulationsButton.click();}
     }
 });

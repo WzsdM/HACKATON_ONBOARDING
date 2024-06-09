@@ -14,9 +14,10 @@
                 </div>
                 <div class="game-container w-50">
                     <div class="grid_rompecabezas" id="grid"></div>
-                    <div id="congratulations" style="display:none;">
-                        <i class="ai-light-bulb"></i>¡Felicidades! Has completado el puzzle.
-                    </div>
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" id="congratulations">
+                        
+                    </button>
+
                 </div>
             </div>
         </div>
