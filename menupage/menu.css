@@ -139,21 +139,21 @@ body {
 
 .levelgame {
     background-image: url("./recursos/gamerojo.png");
-    background-size: cover;
+    background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
 }
 
 .levelavion {
     background-image: url("./recursos/avionrojo.png");
-    background-size: cover;
+    background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
 }
 
 .levelfinish {
     background-image: url("./recursos/luparojo.png");
-    background-size: cover;
+    background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
 }
@@ -183,7 +183,7 @@ body {
 
 .level03 {
     background-image: url("./recursos/sede1rojo.png");
-    background-size: cover;
+    background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
     bottom: 56%;
