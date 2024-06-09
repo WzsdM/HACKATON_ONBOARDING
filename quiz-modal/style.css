@@ -7,8 +7,7 @@
     left: 50%;
     align-self: center;
     transform: translate(-50%, -50%);
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 
-                0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    
 }
 
 .info_box.activeInfo,
@@ -30,6 +29,7 @@
     border-radius: 100px;
     color: #fff;
     cursor: pointer;
+    box-shadow: none;
 }
 
 .info_box{
@@ -274,9 +274,9 @@ footer button{
     border: none;
     outline: none;
     color: #fff;
-    border-radius: 5px;
-    background: #007bff;
-    border: 1px solid #007bff;
+    border-radius: 100px;
+    background: #1B2F3F;
+    border: 1px solid #4a5b67;
     line-height: 10px;
     opacity: 0;
     pointer-events: none;
@@ -285,7 +285,7 @@ footer button{
 }
 
 footer button:hover{
-    background: #0263ca;
+    background: #4a5b67;
 }
 
 footer button.show{
