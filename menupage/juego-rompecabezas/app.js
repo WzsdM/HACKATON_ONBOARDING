@@ -26,7 +26,7 @@ document.addEventListener('DOMContentLoaded', () => {
             card.dataset.item = item;
             
             const img = document.createElement('img');
-            img.src = `/HACKATON_ONBOARDING/menupage/juego-rompecabezas/img/img${item}.png`; // Ruta de la imagen
+            img.src = `/HACKATON_ONBOARDING/menupage/juego-rompecabezas/img/img${item}.jpg`; // Ruta de la imagen
             
             card.appendChild(img);
             grid.appendChild(card);

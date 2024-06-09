@@ -4,6 +4,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    height: 460px;
 }
 
 #message {
@@ -12,17 +13,18 @@
 }
 
 .grid_rompecabezas {
+    width: 450px;
+    height: 450px;
     display: grid;
-    grid-template-columns: repeat(3, 100px);
-    grid-template-rows: repeat(3, 100px);
-    
+    grid-template-columns: repeat(3, 150px);
+    grid-template-rows: repeat(3, 150px);
 }
 
 .card_rompecabezas {
-    width: 100px;
-    height: 100px;
+    width: 150px;
+    height: 150px;
     background-color: #fff;
-    border: 1px solid #ccc;
+    border: 1px solid #000;
     display: flex;
     justify-content: center;
     align-items: center;

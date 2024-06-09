@@ -69,7 +69,7 @@
             </div>
             <img src="./recursos/curve.png" class="curve lvl3to4" />
             <div class="level04 levelgame level">
-                <div class=" levelgame level completelevel   " type="button" data-bs-toggle="modal" data-bs-target="#level4"></div>
+                <div class=" levelgame level completelevel" type="button" data-bs-toggle="modal" data-bs-target="#level4"></div>
             </div>
             <img src="./recursos/curve.png" class="curve lvl4to5" />
             <div class="level05 levelavion level">
@@ -117,11 +117,11 @@
 
 
     <div class="modal fade" id="level1" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-        <?php include("/xampp/htdocs/HACKATON_ONBOARDING/menupage/juego-memory/juego.php"); ?>
+        <?php include("/xampp/htdocs/HACKATON_ONBOARDING/menupage/juego-rompecabezas/juego.php"); ?>
     </div>
 
     <div class="modal fade" id="level4" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-        <?php include("/xampp/htdocs/HACKATON_ONBOARDING/menupage/juego-rompecabezas/juego.php"); ?>
+        <?php include("/xampp/htdocs/HACKATON_ONBOARDING/menupage/juego-memory/juego.php"); ?>
     </div>
 
     <script src="menu.js"></script>
