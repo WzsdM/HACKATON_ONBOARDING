@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./login/css/styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
        
 </head>
@@ -15,7 +15,7 @@
     </div>
     <div id="login">
         <div class="contenedor-datos">
-            <img class="logo" src="./img/logo-UTP+play3.png" alt="">
+            <img class="logo" src="./img/logo-UTP+play.png" alt="">
             <h2>Empieza tu nueva aventura en UTP</h2>
 
             <p class="tenue">Diviertete mientras aprendes</p>
@@ -46,6 +46,6 @@
             </form>      
         </div>  
     </div>
-    <script src="js/login.js"></script>
+    <script src="./login/js/login.js"></script>
 </body>
 </html>

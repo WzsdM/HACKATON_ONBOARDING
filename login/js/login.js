@@ -7,7 +7,7 @@ document.getElementById('loginForm').addEventListener('submit', async function(e
 
     try {
         // Hacer la solicitud a la API
-        const response = await fetch('http://localhost/apiHackaton-main/auth.php', {
+        const response = await fetch('http://localhost/apiHackaton/auth.php', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/x-www-form-urlencoded'
@@ -21,17 +21,13 @@ document.getElementById('loginForm').addEventListener('submit', async function(e
         const result = await response.json();
 
         if (response.ok) {
-            // Si la autenticación es exitosa, maneja el éxito
-            console.log('Inicio de sesión exitoso', result);
-            // Redirige al usuario o muestra un mensaje de éxito
+            window.location.href = "./menupage/menu.php";
+            sessionStorage.setItem('userData', JSON.stringify(result));
         } else {
-            // Si hay un error, maneja el error
-            console.error('Error en la autenticación', result.error);
-            // Muestra un mensaje de error al usuario
+            alert("Error en la autenticación", result.error);
         }
     } catch (error) {
-        console.error('Error de red', error);
-        // Muestra un mensaje de error al usuario
+        alert("Error de red", error);
     }
 });
 
