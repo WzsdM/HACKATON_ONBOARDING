@@ -10,8 +10,7 @@
 </head>
 
 <body>
-<?php include '../menupage/topBar.php';?>
-
+    <?php include '../menupage/topBar.php'; ?>
     <!--Texto en general -->
     <div class="info-box">
         <div class="left-info">

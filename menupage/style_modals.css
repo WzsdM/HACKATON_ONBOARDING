@@ -56,6 +56,10 @@ body{
     --bs-dropdown-bg: #2F3B44 !important;
 }
 
+.rounded{
+    border-radius: 20px !important;
+}
+
 li {
     display: flex;
     gap: 48px;
