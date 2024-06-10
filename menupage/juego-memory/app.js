@@ -1,6 +1,4 @@
 document.addEventListener('DOMContentLoaded', () => {
-    console.log("DOM fully loaded and parsed");
-
     const grid = document.querySelector('.grid');
     const scoreDisplay = document.getElementById('score');
     let score = 0;
@@ -9,7 +7,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // Modal de Bootstrap
     const coinsModalElement = document.getElementById('coins');
     const coinsModal = new bootstrap.Modal(coinsModalElement);
-    
+
     const gameModalElement = document.getElementById('game');
     const gameModal = new bootstrap.Modal(gameModalElement);
 

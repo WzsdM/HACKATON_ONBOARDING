@@ -1,6 +1,6 @@
 <!-- Inside this JavaScript file I've inserted Questions and Options only -->
 
-<link rel="stylesheet" href="/HACKATON_ONBOARDING/MODALS/quiz-modal/style.css">
+<link rel="stylesheet" href="/HACKATON_ONBOARDING/menupage/quiz-modal/style.css">
 
 <div class="modal-dialog  modal-dialog-centered">
     <div class="modal-content" id="quiz">
@@ -14,11 +14,11 @@
         <div class="info_box">
             <div class="info-title"><span>Algunas reglas de este cuestionario 📝</span></div>
             <div class="info-list">
-                <div class="info">1. Tendrás solo <span>15 segundos ⏱️</span> por cada pregunta.</div>
-                <div class="info">2. Una vez que selecciones tu respuesta, no se puede deshacer ❌.</div>
-                <div class="info">3. No puedes seleccionar ninguna opción una vez que el tiempo se agote ⏳.</div>
-                <div class="info">4. No puedes salir del cuestionario mientras estás jugando 🚫.</div>
-                <div class="info">5. Obtendrás puntos en función de tus respuestas correctas ✔️.</div>
+                <div class="infor">1. Tendrás solo <span>15 segundos ⏱️</span> por cada pregunta.</div>
+                <div class="infor">2. Una vez que selecciones tu respuesta, no se puede deshacer ❌.</div>
+                <div class="infor">3. No puedes seleccionar ninguna opción una vez que el tiempo se agote ⏳.</div>
+                <div class="infor">4. No puedes salir del cuestionario mientras estás jugando 🚫.</div>
+                <div class="infor">5. Obtendrás puntos en función de tus respuestas correctas ✔️.</div>
             </div>
             <div class="buttons">
                 <button class="quit">Salir🚪</button>
@@ -71,8 +71,8 @@
 
 
         <!-- Inside this JavaScript file I've coded all Quiz Codes -->
-        <script src="/HACKATON_ONBOARDING/MODALS/quiz-modal/js/script.js"></script>
-        <script src="/HACKATON_ONBOARDING/MODALS/quiz-modal/js/questions.js"></script>
+        <script src="/HACKATON_ONBOARDING/menupage/quiz-modal/js/script.js"></script>
+        <script src="/HACKATON_ONBOARDING/menupage/quiz-modal/js/questions.js"></script>
 
 
 

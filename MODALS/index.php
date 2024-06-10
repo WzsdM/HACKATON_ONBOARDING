@@ -71,8 +71,8 @@
         UTP QUIZ
     </button>
 
-    <div class="modal fade" id="3" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-        <?php include("/xampp/htdocs/HACKATON_ONBOARDING/quiz-modal/quiz.php"); ?>
+    <div class="modal fade" id="quiz" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <?php include("/xampp/htdocs/HACKATON_ONBOARDING/MODALS/quiz-modal/quiz.php"); ?>
     </div>
 
 </body>

@@ -1,7 +1,7 @@
 * {
     margin: 0;
     padding: 0;
-    color: white;
+    
     font-family: "Lato", sans-serif;
     font-weight: bold;
 }
@@ -20,6 +20,7 @@ body {
 }
 
 .topBar {
+    color: white;
     position: absolute;
     background-color: #253038;
     width: 100vw;
