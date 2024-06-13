@@ -1,9 +1,15 @@
 document.addEventListener('DOMContentLoaded', () => {
-    console.log("DOM fully loaded and parsed");
-
     const grid = document.querySelector('.grid');
     const scoreDisplay = document.getElementById('score');
     let score = 0;
+    const totalPairs = 8; // Número total de pares
+
+    // Modal de Bootstrap
+    const coinsModalElement = document.getElementById('coins');
+    const coinsModal = new bootstrap.Modal(coinsModalElement);
+
+    const gameModalElement = document.getElementById('game');
+    const gameModal = new bootstrap.Modal(gameModalElement);
 
     // Array con las rutas de las imágenes
     const elements = [
@@ -14,8 +20,8 @@ document.addEventListener('DOMContentLoaded', () => {
         '/HACKATON_ONBOARDING/menupage/juego-memory/img/5.png',
         '/HACKATON_ONBOARDING/menupage/juego-memory/img/6.png',
         '/HACKATON_ONBOARDING/menupage/juego-memory/img/7.png',
-        '/HACKATON_ONBOARDING/menupage/juego-memory/img/8.png',
-    ];
+        '/HACKATON_ONBOARDING/menupage/juego-memory/img/8.png'
+    ];
     let gameArray = [...elements, ...elements];
 
     // Función para barajar las cartas
@@ -84,6 +90,7 @@ document.addEventListener('DOMContentLoaded', () => {
         if (firstCard.dataset.item === secondCard.dataset.item) {
             disableCards();
             updateScore();
+            checkWin(); // Verificar si el juego ha terminado
         } else {
             unflipCards();
         }
@@ -116,8 +123,17 @@ document.addEventListener('DOMContentLoaded', () => {
     // Actualizar la puntuación
     function updateScore() {
         score++;
-        scoreDisplay.innerText = `Puntuación: ${score}`;
+        scoreDisplay.innerText = ``;
         console.log("Score updated:", score);
+    }
+
+    // Verificar si el juego ha terminado
+    function checkWin() {
+        if (score === totalPairs) {
+            console.log("Game completed!");
+            gameModal.hide();
+            coinsModal.show();
+        }
     }
 
     // Añadir event listener a las cartas

@@ -1,8 +1,8 @@
-<script src="/HACKATON_ONBOARDING/menupage/juego-rompecabezas/app.js"></script>
-<link rel="stylesheet" href="/HACKATON_ONBOARDING/menupage/juego-rompecabezas/styles.css">
-<div class="modal-dialog modal-xl modal-dialog-centered">
+<script src="../menupage/juego-rompecabezas/appr.js"></script>
+<link rel="stylesheet" href="../menupage/juego-rompecabezas/styless.css">
+<div class="modal-dialog modal-xl modal-dialog-centered" id="gameModal">
     <div class="container">
-        <div class="modal-content  w-auto" id="game">
+        <div class="modal-content " id="game">
             <div class="modal-juego d-flex w-100 align-items-center mb-3 justify-content-end">
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"><i class="ai-cross"></i></button>
             </div>
@@ -21,8 +21,7 @@
     </div>
 </div>
 
-<button type="button" data-bs-toggle="modal" data-bs-target="#coins" id="congratulations">
-    <div class="modal fade" id="coins" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-        <?php include("/xampp/htdocs/HACKATON_ONBOARDING/MODALS/coins-modal/coins.php"); ?>
-    </div>
-</button>
+<!-- Modal Coins -->
+<div class="modal fade" id="coins"  data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel">
+    <?php include("/xampp/htdocs/HACKATON_ONBOARDING/componentes/coins.php"); ?>
+</div>
