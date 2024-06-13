@@ -18,7 +18,7 @@
                 <div class="infor">2. Una vez que selecciones tu respuesta, no se puede deshacer ❌.</div>
                 <div class="infor">3. No puedes seleccionar ninguna opción una vez que el tiempo se agote ⏳.</div>
                 <div class="infor">4. No puedes salir del cuestionario mientras estás jugando 🚫.</div>
-                <div class="infor">5. Obtendrás puntos en función de tus respuestas correctas ✔️.</div>
+                <div class="infor">5. Obtendrás puntos en función de tus respuestas correctas ✔️..</div>
             </div>
             <div class="buttons">
                 <button class="quit">Salir🚪</button>
