@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cabecera Responsive Ejemplo</title>
     <link rel="stylesheet" href="styless.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-IGG1f8xt2vhS0EcZXFIv0FwtCJkGP6m1fdHvDzKZvLT1zj+gbs6LTM1g1gjqva3F" crossorigin="anonymous"></script>
 </head>
 

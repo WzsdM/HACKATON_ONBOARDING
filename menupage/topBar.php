@@ -34,6 +34,7 @@
 </div>
 
 
-<script src="./menu.js"></script>
+<script src="../menupage/menu.js"></script>
+<script src="../tienda/menu.js"></script>
 </body>
 </html>
