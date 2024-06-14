@@ -29,8 +29,9 @@
         <div class="section1 ">
             <img src="./recursos/curve.png" class="curve lvl2to3" />
             <div class="level03 levelsede level">
-                
-            </div><div class="level03 level completelevel" type="button" data-bs-toggle="modal" data-bs-target="#level3"></div>
+
+            </div>
+            <div class="level03 level completelevel" type="button" data-bs-toggle="modal" data-bs-target="#level3"></div>
             <img src="./recursos/curve.png" class="curve lvl3to4" />
             <div class="level04 levelgame level completelevel"></div>
             <div class="level04 level completelevel" type="button" data-bs-toggle="modal" data-bs-target="#level4"></div>
