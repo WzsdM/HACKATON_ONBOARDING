@@ -8,7 +8,7 @@
             </div>
             <div class="descripcion d-flex w-100">
                 <div class="w-50 ps-5">
-                    <h2><b>Nivel 4</b></h2>
+                    <h2 class="nivelito"><b>Nivel 4</b></h2>
                     <p class="fs-5 my-4">Juega y descubre cuáles son los beneficios que UTP tiene para tí</p>
                     <p><b>Recompensa: </b> <span class="px-2">300 </span> <img src="./juego-memory/img/UTP-COIN.png"> </p>
                 </div>
@@ -17,7 +17,8 @@
                 </div>
             </div>
         </div>
-    </div><div id="score"></div>
+    </div>
+    <div id="score"></div>
 </div>
 
 <!-- Modal Coins -->

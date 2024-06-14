@@ -1,5 +1,7 @@
 /* styles.css */
-
+.nivelito b{
+    font-size: 30px;
+}
 #game{
     background-color: #2F3B44;
     color: #fff;

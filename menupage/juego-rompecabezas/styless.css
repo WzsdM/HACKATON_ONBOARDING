@@ -1,5 +1,7 @@
 /* styles.css rompecabezas */
-
+.nivelito b{ 
+    font-size: 30px;
+}
 .game-container {
     display: flex;
     flex-direction: column;

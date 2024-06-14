@@ -130,8 +130,8 @@ document.addEventListener('DOMContentLoaded', () => {
     // Verificar si el juego ha terminado
     function checkWin() {
         if (score === totalPairs) {
-            console.log("Game completed!");
-            gameModal.hide();
+            
+            gameModal.remove();
             coinsModal.show();
         }
     }
