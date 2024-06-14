@@ -1,7 +1,5 @@
 // Función para obtener el código del alumno desde sessionStorage
 function obtenerCodAlumno() {
-    console.log(sessionStorage.getItem("userData"));
-
     const usuario = sessionStorage.getItem("userData");
     try {
         // Intenta parsear el valor almacenado en sessionStorage
