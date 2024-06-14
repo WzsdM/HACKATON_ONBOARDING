@@ -18,7 +18,13 @@ body {
     height: 100%;
     overflow-x: hidden;
     overflow-y: hidden;
+}
+
+
+.container-tienda{
     background-color: #2F3B44;
+    width: 100%;
+    height: 100%;
 }
 
 /*Estilos del texto*/

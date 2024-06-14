@@ -32,8 +32,6 @@
         </div>
     </div>
 </div>
-
-
 <script src="../menupage/menu.js"></script>
 <script src="../tienda/menu.js"></script>
 </body>
