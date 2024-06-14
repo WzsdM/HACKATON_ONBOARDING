@@ -1,104 +1,42 @@
-// Función para obtener el código del alumno desde sessionStorage
-function obtenerCodAlumno() {
-    console.log(sessionStorage.getItem("userData"));
+document.getElementById('loginForm').addEventListener('submit', async function(event) {
+    event.preventDefault();
 
-    const usuario = sessionStorage.getItem("userData");
+    // Obtener los valores del formulario
+    const cod_alumno = document.getElementById('usuario').value;
+    const contrasena = document.getElementById('password').value;
+
     try {
-        // Intenta parsear el valor almacenado en sessionStorage
-        const parsedUser = JSON.parse(usuario);
-        const codAlumno = parsedUser.cod_alumno;
-        return codAlumno;
-    } catch (error) {
-        console.error('Error al parsear el código del alumno desde sessionStorage:', error);
-        return null;
-    }
-}
+        // Hacer la solicitud a la API
+        const response = await fetch('http://localhost/apiHackaton/auth.php', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/x-www-form-urlencoded'
+            },
+            body: new URLSearchParams({
+                'cod_alumno': cod_alumno,
+                'contrasena': contrasena
+            })
+        });
 
-// Función para obtener los datos del usuario desde la API
-function obtenerDatosUsuario() {
-    return new Promise((resolve, reject) => {
-        const codAlumno = obtenerCodAlumno();
-        if (!codAlumno) {
-            reject('No se encontró el código del alumno en sessionStorage');
-            return;
+        const result = await response.json();
+
+        if (response.ok) {
+            window.location.href = "./menupage/menu.php";
+            sessionStorage.setItem('userData', JSON.stringify(result));
+        } else {
+            alert("Error en la autenticación", result.error);
         }
+    } catch (error) {
+        alert("Error de red", error);
+    }
+});
 
-        // Construir parámetros de consulta
-        const queryParams = codAlumno.map(codigo => `cod_alumno[]=${codigo}`).join('&');
+// Agregar funcionalidad para mostrar/ocultar la contraseña
+const togglePassword = document.getElementById('togglePassword');
+const password = document.getElementById('password');
 
-        // Realizar solicitud a la API
-        fetch(`../tu_api.php?${queryParams}`)
-            .then(response => {
-                if (!response.ok) {
-                    throw new Error('Error en la solicitud de datos del usuario');
-                }
-                return response.json();
-            })
-            .then(userData => {
-                resolve(userData);
-            })
-            .catch(error => {
-                reject('Error al obtener los datos del usuario: ' + error.message);
-            });
-    });
-}
-
-// Función para actualizar la interfaz con los datos del usuario
-function actualizarInterfazUsuario() {
-    obtenerDatosUsuario()
-        .then(userData => {
-            if (userData) {
-                document.getElementById("userGreeting").textContent = `Alumno,`;
-                document.getElementById("userName").textContent = userData.nombre;
-                document.getElementById("coinsCount").textContent = userData.monedas;
-            }
-        })
-        .catch(error => {
-            console.error(error);
-        });
-}
-
-// Función para obtener el nivel del usuario desde la API
-function obtenerNivelUsuario() {
-    return new Promise((resolve, reject) => {
-        obtenerDatosUsuario()
-            .then(userData => {
-                if (userData) {
-                    resolve(userData.puntaje);
-                } else {
-                    resolve(null);
-                }
-            })
-            .catch(error => {
-                reject(error);
-            });
-    });
-}
-
-// Función para controlar los niveles según el nivel del usuario
-function controlarNiveles() {
-    obtenerNivelUsuario()
-        .then(nivelUsuario => {
-            if (nivelUsuario !== null) {
-                const nivelesSuperiores = document.querySelectorAll(".level");
-                nivelesSuperiores.forEach((nivel) => {
-                    const nivelNum = parseInt(nivel.classList[0].replace("level", ""));
-                    if (nivelNum != nivelUsuario) { // Aquí aplicas tu lógica específica
-                        nivel.style.pointerEvents = "none";
-                    }
-                    if (nivelNum > nivelUsuario) {
-                        nivel.style.opacity = "0.5";
-                    }
-                });
-            }
-        })
-        .catch(error => {
-            console.error(error);
-        });
-}
-
-// Función para cargar las funciones de control al cargar la página
-window.onload = function() {
-    actualizarInterfazUsuario();
-    controlarNiveles();
-};
+togglePassword.addEventListener('click', function() {
+    const type = password.getAttribute('type') === 'password' ? 'text' : 'password';
+    password.setAttribute('type', type);
+    this.classList.toggle('fa-eye-slash');
+});
