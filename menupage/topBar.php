@@ -44,6 +44,7 @@
 
     <script src="../menupage/menu.js"></script>
     <script src="../tienda/menu.js"></script>
+    <script src="../componentes/cerrar.js"></script>
 </body>
 
 </html>

@@ -92,8 +92,6 @@
         <?php include("/xampp/htdocs/HACKATON_ONBOARDING/menupage/juego-memory/juego.php"); ?>
     </div>
 
-
-
     <script src="menu.js"></script>
 </body>
 
