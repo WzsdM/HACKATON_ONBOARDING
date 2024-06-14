@@ -45,9 +45,11 @@ function controlarNiveles() {
       }
       else if (nivelNum > nivelUsuario) {
         nivel.classList.add("incompletelevel")
+        nivel.style.pointerEvents = "none"; 
       }
       else if (nivelNum < nivelUsuario) {
         nivel.classList.add("completelevel")
+        nivel.style.pointerEvents = "none"; 
       }
   });
 }
