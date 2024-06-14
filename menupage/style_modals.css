@@ -70,11 +70,11 @@
 .rounded {
     background: #2F3B44;
     box-sizing: border-box;
-    border-radius: 1em;
-    -webkit-border-radius: 1em;
-    -moz-border-radius: 1em;
-    -ms-border-radius: 1em;
-    -o-border-radius: 1em;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
     align-self: center;
     display: flex;
     justify-content: space-evenly;
@@ -145,10 +145,6 @@
 
 .dropdown-menu-dark {
     --bs-dropdown-bg: #2F3B44 !important;
-}
-
-.rounded {
-    border-radius: 20px !important;
 }
 
 @media (max-width: 1000px) {

@@ -13,7 +13,3 @@ document.addEventListener("DOMContentLoaded", function () {
     window.location.href = "../menupage/menu.php";
   });
 });
-
-window.onload = function () {
-  actualizarInterfazUsuario();
-};

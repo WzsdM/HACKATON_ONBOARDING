@@ -68,7 +68,6 @@
             });
         </script>
     </div>
-    <script scr="menu.js"></script>
 </body>
 
 </html>
