@@ -12,7 +12,7 @@
 
 <body>
     <div class="topBar">
-        <div class="topBar_left" type="button" data-bs-toggle="modal" data-bs-target="#logout">
+        <div class="topBar_left" type="button" data-bs-toggle="dropdown" aria-expanded="false">
             <div class="userImg">
                 <img src="../img/perfil.png" alt="User Profile" class="userProfile">
             </div>
@@ -35,6 +35,11 @@
                 </div>
             </div>
         </div>
+        <ul class="dropdown-menu dropdown-menu-dark">
+            <li><a class="dropdown-item" href="#">Action</a></li>
+            <li><a class="dropdown-item" href="#">Another action</a></li>
+            <li><a class="dropdown-item" href="#">Something else here</a></li>
+        </ul>
     </div>
 
     <div class="modal fade" id="logout" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
