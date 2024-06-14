@@ -32,9 +32,9 @@
 
             </div>
             <img src="./recursos/curve.png" class="curve lvl3to4" />
-            <div class="level04 levelgame level">
+            <!--<div class="level04 levelgame level">
                 <div class=" levelgame level completelevel" type="button" data-bs-toggle="modal" data-bs-target="#level4"></div>
-            </div>
+            </div>-->
             <div class="level04 levelgame level completelevel" type="button" data-bs-toggle="modal" data-bs-target="#level4"></div>
             <img src="./recursos/curve.png" class="curve lvl4to5 completecurve" />
             <div class="level05 levelavion level">
