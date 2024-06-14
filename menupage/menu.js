@@ -38,8 +38,6 @@ function controlarNiveles() {
   const nivelesSuperiores = document.querySelectorAll(".level");
   nivelesSuperiores.forEach((nivel) => {
       const nivelNum = parseInt(nivel.classList[0].replace("level", ""));
-      console.log(nivelUsuario);
-      console.log(nivelNum);
       if (nivelNum == nivelUsuario) { //AQUI YEICOT
         nivel.classList.add("myuserlevel")
           
