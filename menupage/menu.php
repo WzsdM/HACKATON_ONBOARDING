@@ -15,26 +15,25 @@
 </head>
 
 <body>
-    <?php include 'topBar.php';?>
+    <?php include 'topBar.php'; ?>
 
     <div class="levelsDispos">
         <div class="section0">
             <div class="level01 levelgame level completelevel" type="button" data-bs-toggle="modal" data-bs-target="#level1"></div>
             <img src="./recursos/curve.png" class="curve lvl1to2 completecurve" />
-            <div class="level02 levelavion level">
-                <div class=" levelgame level completelevel" type="button" data-bs-toggle="modal" data-bs-target="#level2"></div>
+            <div class="level02 levelgame level completelevel">
+                <div class="level02 level completelevel" type="button" data-bs-toggle="modal" data-bs-target="#level2"></div>
             </div>
+
         </div>
-        <div class="section1 sede1">
+        <div class="section1 ">
             <img src="./recursos/curve.png" class="curve lvl2to3" />
             <div class="level03 levelsede level">
 
             </div>
             <img src="./recursos/curve.png" class="curve lvl3to4" />
-            <div class="level04 levelgame level">
-                <div class=" levelgame level completelevel" type="button" data-bs-toggle="modal" data-bs-target="#level4"></div>
-            </div>
-            <div class="level04 levelgame level completelevel" type="button" data-bs-toggle="modal" data-bs-target="#level4"></div>
+            <div class="level04 levelgame level completelevel"></div>
+            <div class="level04 level completelevel" type="button" data-bs-toggle="modal" data-bs-target="#level4"></div>
             <div class="level05 levelavion level">
 
             </div>
@@ -83,13 +82,14 @@
         <?php include("/xampp/htdocs/HACKATON_ONBOARDING/menupage/juego-rompecabezas/juego.php"); ?>
     </div>
 
+    <div class="modal fade" id="level2" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <?php include("/xampp/htdocs/HACKATON_ONBOARDING/menupage/quiz-modal/quiz.php"); ?>
+    </div>
     <div class="modal fade" id="level4" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
         <?php include("/xampp/htdocs/HACKATON_ONBOARDING/menupage/juego-memory/juego.php"); ?>
     </div>
 
-    <div class="modal fade" id="level2" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-        <?php include("/xampp/htdocs/HACKATON_ONBOARDING/menupage/quiz-modal/quiz.php"); ?>
-    </div>
+
 
     <script src="menu.js"></script>
 </body>
