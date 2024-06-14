@@ -29,7 +29,7 @@ function obtenerNivelUsuario() {
 // Función para habilitar y deshabilitar los niveles según el nivel del usuario
 function controlarNiveles() {
   // Obtener el nivel del usuario del sessionStorage
-  const nivelUsuario = obtenerNivelUsuario();
+  var nivelUsuario = obtenerNivelUsuario();
   if(nivelUsuario==0){
     nivelUsuario=1;
   }
