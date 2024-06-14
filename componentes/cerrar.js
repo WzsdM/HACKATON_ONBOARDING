@@ -20,6 +20,6 @@ document.addEventListener("DOMContentLoaded", function() {
         }
 
         // Redirigir a la página de inicio de sesión
-        window.location.href = "login.html"; // Asegúrate de que 'login.html' es la ruta correcta a tu página de inicio de sesión
+        window.location.href = "../index.php"; // Asegúrate de que 'login.html' es la ruta correcta a tu página de inicio de sesión
     });
 });

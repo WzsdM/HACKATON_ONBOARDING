@@ -27,26 +27,14 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    overflow-y: hidden;
+    overflow-x: hidden;
 }
 
 .level {
     width: 12vw;
     height: 18vh;
     position: absolute;
-}
-
-/*HOVER LEVELS*/
-.level:hover {
-    filter: contrast(120%) drop-shadow(0px 10px 4px rgba(0, 0, 0, 0.40));
-    -webkit-filter: contrast(120%) drop-shadow(0px 10px 4px rgba(0, 0, 0, 0.40));
-    -moz-filter: contrast(120%) drop-shadow(0px 10px 4px rgba(0, 0, 0, 0.40));
-    cursor: pointer;
-}
-
-.completelevel:hover {
-    filter: hue-rotate(100deg)brightness(120%) contrast(120%) drop-shadow(10px 10px 4px rgba(0, 0, 0, 0.40));
-    -webkit-filter: hue-rotate(100deg)brightness(120%) contrast(120%) drop-shadow(10px 10px 4px rgba(0, 0, 0, 0.40));
-    -moz-filter: hue-rotate(100deg) brightness(120%) contrast(120%) drop-shadow(10px 10px 4px rgba(0, 0, 0, 0.40));
 }
 
 .levelgame {
@@ -70,16 +58,40 @@ body {
     background-position: center;
 }
 
-/*LEVEL COMPLETE*/
-.completelevel {
-    filter: hue-rotate(100deg) brightness(120%);
-    -webkit-filter: hue-rotate(100deg) brightness(120%);
-    -moz-filter: hue-rotate(100deg) brightness(120%);
+/*LEVEL HOVER*/
+.completelevel:hover{
+    filter: hue-rotate(100deg) contrast(133%) drop-shadow(0px 11px 5px rgba(0,0,0,0.70));
+    -webkit-filter: hue-rotate(100deg) contrast(133%) drop-shadow(0px 11px 5px rgba(0,0,0,0.70));
+    -moz-filter: hue-rotate(100deg) contrast(133%) drop-shadow(0px 11px 5px rgba(0,0,0,0.70));
+}
+.myuserlevel:hover{
+    cursor: pointer;
+    filter: hue-rotate(0deg) drop-shadow(0px 11px 5px rgba(0,0,0,0.70));
+    -webkit-filter: hue-rotate(0deg) drop-shadow(0px 11px 5px rgba(0,0,0,0.70));
+    -moz-filter: hue-rotate(0deg) drop-shadow(0px 11px 5px rgba(0,0,0,0.70));
+}
+.incompletelevel:hover{
+    filter: grayscale(100%) opacity(70%);
+    -webkit-filter: grayscale(100%) opacity(70%);
+    -moz-filter: grayscale(100%) opacity(70%);
+    cursor: not-allowed;
 }
 
-.completecurve {
-    filter: brightness(0) saturate(100%) invert(82%) sepia(61%) saturate(1075%) hue-rotate(38deg) brightness(93%) contrast(85%);
-    -webkit-filter: brightness(0) saturate(100%) invert(82%) sepia(61%) saturate(1075%) hue-rotate(38deg) brightness(93%) contrast(85%);
+/*LEVEL COMPLETE*/
+.completelevel {
+    filter: hue-rotate(100deg)brightness(120%);
+    -webkit-filter: hue-rotate(100deg)brightness(120%);
+    -moz-filter: hue-rotate(100deg)brightness(120%);
+}
+.incompletelevel{
+    filter: grayscale(100%) opacity(70%);
+    -webkit-filter: grayscale(100%) opacity(70%);
+    -moz-filter: grayscale(100%) opacity(70%);
+}
+.myuserlevel{
+    filter: hue-rotate(0deg);
+    -webkit-filter: hue-rotate(0deg);
+    -moz-filter: hue-rotate(0deg);
 }
 
 /*LEVELS COMPOSITION*/
@@ -248,8 +260,11 @@ body {
         overflow-y: scroll;
     }
 
+    .levelsDispos{
+        height: 250vh;
+    }
+
     .level {
-        height: 22vh;
         width: 15vh;
         position: unset;
     }
@@ -321,13 +336,13 @@ body {
     }
 
     .lvl1to2 {
-        bottom: 90%;
+        bottom: 92%;
         left: 41.5%;
         transform: rotate(10deg);
     }
 
     .lvl2to3 {
-        bottom: 79%;
+        bottom: 83%;
         left: 41%;
         transform: rotate(104deg);
     }
@@ -335,63 +350,63 @@ body {
     .lvl3to4 {
         width: 32vw;
         height: auto;
-        bottom: 68.5%;
+        bottom: 75%;
         left: 26%;
         transform: rotate(203deg);
     }
 
     .lvl4to5 {
         width: 28vw;
-        bottom: 60.5%;
+        bottom: 67.5%;
         left: 38%;
         transform: rotate(93deg);
     }
 
     .lvl5to6 {
         width: 28vw;
-        bottom: 52%;
+        bottom: 61.5%;
         left: 33%;
         transform: rotate(197deg);
     }
 
     .lvl6to7 {
         width: 36vw;
-        bottom: 43%;
+        bottom: 53%;
         left: 38%;
         transform: rotate(98deg);
     }
 
     .lvl7to8 {
         width: 28vw;
-        bottom: 34%;
+        bottom: 47%;
         left: 34%;
         transform: rotate(211deg);
     }
 
     .lvl8to9 {
         width: 28vw;
-        bottom: 26%;
+        bottom: 40%;
         left: 34%;
         transform: rotate(99deg);
     }
 
     .lvl9to10 {
         width: 32vw;
-        bottom: 17%;
+        bottom: 32%;
         left: 32%;
         transform: rotate(203deg);
     }
 
     .lvl10to11 {
         width: 32vw;
-        bottom: 7.5%;
+        bottom: 24.5%;
         left: 35%;
         transform: rotate(95deg);
     }
 
     .lvl11to12 {
         width: 29vw;
-        bottom: -1%;
+        bottom: 18%;
         left: 35%;
         transform: rotate(207deg);
     }

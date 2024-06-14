@@ -21,7 +21,7 @@ function actualizarInterfazUsuario() {
 function obtenerNivelUsuario() {
   const userData = obtenerDatosUsuario();
   if (userData) {
-      return userData.puntaje;
+      return parseInt(userData.puntaje);
   }
   return null;
 }
@@ -29,17 +29,27 @@ function obtenerNivelUsuario() {
 // Función para habilitar y deshabilitar los niveles según el nivel del usuario
 function controlarNiveles() {
   // Obtener el nivel del usuario del sessionStorage
-  const nivelUsuario = obtenerNivelUsuario();
+  var nivelUsuario = obtenerNivelUsuario();
+  if(nivelUsuario==0){
+    nivelUsuario=1;
+  }
 
   // Desactivar los niveles superiores al nivel del usuario
   const nivelesSuperiores = document.querySelectorAll(".level");
   nivelesSuperiores.forEach((nivel) => {
       const nivelNum = parseInt(nivel.classList[0].replace("level", ""));
-      if (nivelNum != nivelUsuario) { //AQUI YEICOT
-          nivel.style.pointerEvents = "none";
+      if (nivelNum == nivelUsuario) { //AQUI YEICOT
+        nivel.classList.add("myuserlevel")
+          
+          //nivel.style.pointerEvents = "myuserlevel";
       }
-      if (nivelNum > nivelUsuario) {
-          nivel.style.opacity = "0.5";
+      else if (nivelNum > nivelUsuario) {
+        nivel.classList.add("incompletelevel")
+        nivel.style.pointerEvents = "none"; 
+      }
+      else if (nivelNum < nivelUsuario) {
+        nivel.classList.add("completelevel")
+        nivel.style.pointerEvents = "none"; 
       }
   });
 }
