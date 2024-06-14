@@ -88,7 +88,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
     function checkWin() {
         if (gameArray.join('') === correctOrder.join('')) {
-            gameModal.hide();
+            m = document.getElementById("level1")
+            console.log(m);
+            m.remove();
             coinsModal.show();
         }
     }
