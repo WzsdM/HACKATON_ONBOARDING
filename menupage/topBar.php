@@ -40,9 +40,22 @@
             </div>
         </div>
         <ul class="dropdown-menu dropdown-menu-dark">
-            <li><a class="dropdown-item" href="#">Action</a></li>
-            <li><a class="dropdown-item" href="#">Another action</a></li>
-            <li><a class="dropdown-item" href="#">Something else here</a></li>
+            <li class="d-flex gap-4">
+                <div class="icon"><img src="../img/iconos/icon-perfil.svg"></div>
+                <p>Mi perfil</p>
+            </li>
+            <li class="d-flex gap-4">
+                <div class="icon"><img src="../img/iconos/icon-book.svg"></div>
+                <p>Políticas</p>
+            </li>
+            <li class="d-flex gap-4">
+                <div class="icon"><img src="../img/iconos/icon-support.svg"></div>
+                <p>Soporte</p>
+            </li>
+            <li class="d-flex gap-4" type="button" data-bs-toggle="modal" data-bs-target="#logout">
+                <div class="icon"><img src="../img/iconos/icon-logout.svg"></div>
+                <p>Cerrar Sesión</p>
+            </li>
         </ul>
     </div>
 
